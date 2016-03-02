@@ -1,0 +1,38 @@
+.events-container {
+	padding-bottom: 20px;
+
+	.jumbotron {
+		text-align: center;
+	}
+
+	.banner {
+		margin-bottom: 20px;
+	}
+
+	.banner-inner {
+		width: 100%;
+		min-height: 200px;
+		background-color: white;
+		color: gray;
+		padding: 20px;
+	}
+
+	.banner-inner > div {
+		margin-bottom: 20px;
+	}
+
+	.content {
+		padding: 0px 20px;
+	}
+
+	.date {
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		font-size: 40px;
+		text-align: center;
+	}
+
+	.event-img > img {
+		width: 100%;
+	}
+}

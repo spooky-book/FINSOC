@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UNSW FINSOC</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <div id="finsoc-navbar">
+    <%= render partial: "layouts/navbar" %>
+  </div>
+  <div id="wrapper">
+    <%= yield %>
+    <div id="footer" class="container">
+      <%= render partial: "layouts/footer" %>
+    </div>
+  </div>
+  
+</body>
+</html>

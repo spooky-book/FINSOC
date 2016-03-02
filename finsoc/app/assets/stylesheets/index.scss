@@ -1,0 +1,123 @@
+// Place all the styles related to the main controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.index-container {
+
+	.jumbotron {
+		text-align: center;
+		margin-bottom: 0px;
+	}
+
+	.banner-inner {
+		width: 100%;
+		min-height: 200px;
+		background-color: black;
+		color: white;
+	}
+
+	.content {
+		padding: 20px 50px;
+	}
+
+	#mission {
+		background-color: #1b3978;
+	}	
+
+	#sponsors {
+		background-color: whitesmoke;
+		color: #007bb5;
+	}
+
+	/* Events */
+	#events-carousel {
+		position: relative;
+	}
+
+	.event-box {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 300px;
+		height: 100%;
+		z-index: 1000;
+		background-color: rgba(0,0,0,0.7);
+		color: white;
+		padding-left: 50px;
+		padding-right: 20px;
+		padding-top: 20px;
+	}
+
+	.event-box h1 {
+		line-height: 130%;
+	}
+
+	@media (max-width: 800px) {
+		#events-carousel {
+			height: 300px;
+		}
+
+		.event-box > .description {
+			display: none;
+		}
+	}
+
+	@media (min-width: 800px) {
+		#events-carousel {
+			height: 500px;
+		}
+	}
+
+	.carousel-inner {
+		height: 100%;
+	}
+
+	.carousel-img {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+
+	.carousel-img > img {
+		min-height: 100%;
+		min-width: 100%;
+		object-fit: cover;       /* Scale the image so it covers whole area, thus will likely crop */
+	  	object-position: center; /* Center the image within the element */
+	}
+
+	.arrow-link {
+		padding-right: 10px;
+		color: red;
+	}
+
+	/* Sponsors */
+	#sponsor-carousel {
+		height: 200px;
+	}
+
+	#sponsor-carousel .item {
+	  margin: 10px 20px;
+	}
+
+	#sponsor-carousel .item img {
+	  display: block;
+	  width: 100%;
+	  height: auto;
+	}
+
+	.owl-item {
+		height: 170px;
+		position: relative;
+	}
+
+	.owl-item img {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 50%;
+		transform: translate(0,-50%); /* For IE9 */
+		transform: translate3d(0,-50%,0); /* Modern Browsers - better performance */
+		margin: 0 auto;
+		padding: 15px;
+	}
+}

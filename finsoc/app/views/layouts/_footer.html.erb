@@ -1,0 +1,30 @@
+<div class="row">
+	<div class="col-md-3">
+		<%= link_to image_tag("logo_sm.png", id: "footer-logo"), root_path %>
+	</div>
+	<div class="col-md-2 site-map">
+		<h4>ABOUT US</h4>
+		<%= link_to "Our Team", about_us_path(anchor: "team") %>
+		<%= link_to "Our Values", about_us_path(anchor: "values") %>
+	</div>
+	<div class="col-md-2 site-map">
+		<h4>SPONSORS</h4>
+		<%= link_to "Our Sponsors", sponsorship_path(anchor: "sponsors") %>
+		<%= link_to "Apply", sponsorship_path(anchor: "apply") %>
+	</div>
+	<div class="col-md-2 site-map">
+		<h4>EVENTS</h4>
+		<%= link_to "Latest events", events_path %>
+	</div>
+	<div class="col-md-3" id="contacts">
+		<p>
+			<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+			Kensington, New South Wales
+		</p>
+		<p>
+			<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+			enquiries@unswfinsoc.org.au
+		</p>
+		<p>Produced by UNSW Finsoc &copy 2015-16</p>
+	</div>
+</div>
