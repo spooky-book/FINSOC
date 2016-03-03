@@ -1,3 +1,6 @@
+// navbar expand width (must be before bootstrap)
+$grid-float-breakpoint: 1100px;
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome";
