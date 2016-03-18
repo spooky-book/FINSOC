@@ -3,28 +3,16 @@
     <!-- Indicators -->
     <ol class="carousel-indicators">
      <li data-target="#events-carousel" data-slide-to="0" class="active"></li>
-      <li data-target="#events-carousel" data-slide-to="1"></li>
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
      <div class="item active carousel-img">
       <div class="event-box">
-        <h1>FINSOC Social BBQ</h1>
-        <h3 class="description">11 Mar 2016</h3>
-        <a class="white-colour-link" href="events.html">
-          <span class="glyphicon glyphicon-chevron-right arrow-link" aria-hidden="true"></span>More info
-        </a>
-      </div>
-       <%= image_tag "events/finsoc_social_bbq.jpg", alt: "FINSOC Social BBQ" %>
-     </div>
-     <div class="item carousel-img">
-      <div class="event-box">
-        <h1>Financial Planning Insight Talk</h1>
-        <h3 class="description">15 Mar 2016</h3>
-        <a class="white-colour-link" href="events.html">
-          <span class="glyphicon glyphicon-chevron-right arrow-link" aria-hidden="true"></span>More info
-        </a>
+        <%= link_to events_path, class: "white-colour-link" do %>
+          <span class="glyphicon glyphicon-chevron-right arrow-link" aria-hidden="true"></span>
+          More events
+        <% end %>
       </div>
        <%= image_tag "events/financial_planning_insight_talk.jpg", alt: "Investment Banking and Consulting Evening" %>
      </div>
