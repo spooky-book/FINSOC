@@ -56,16 +56,21 @@
 	}
 
 	.subsection-title {
-		background-color: #337AB7;
-		color: white;
+		text-transform: uppercase;
+		text-align: center;
+		color: #337AB7;
 		margin: 0px 50px 20px 50px;
-	}
 
-	.subsection-title {
-		padding: 10px 20px;
-	}
+		h2 {
+			margin: 10px 0px;
+		}
 
-	.subsection-title > h2 {
-		margin: 10px 0px;
+		hr {
+			background-image: linear-gradient(to right, rgba(131, 186, 247, 0), rgba(131, 186, 247, 0.75), rgba(131, 186, 247, 0));
+			height: 1px;
+			width: 80%;
+			margin-left: 10%;
+			margin-right: 10%;
+		}
 	}
 }
