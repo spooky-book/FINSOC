@@ -1,0 +1,62 @@
+<div class="edit-events-container">
+  <h1>Edit Events</h1>
+  <table class="table table-striped">
+    <thead>
+      <th>Event Title</th>
+      <th>Date</th>
+      <th>Event Photo</th>
+    </thead>
+    <tbody>
+      <% @events.each do |event| %>
+      <tr class="event-row" data-id="<%= event.id %>">
+        <td class="event-title"contenteditable><%= event.title %></td>
+        <td class="event-date"><%= select_date event.date %></td>
+        <td class="event-img">
+          <% if event.location %>
+            <%= image_tag "events/" + event.location, class:  "current-event-img"%>
+          <% else %>
+            No picture uploaded.
+          <% end %>
+          <%= button_tag "Upload picture",
+            class: "file-upload-button" %>
+        </td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <button class="btn btn-default" data-toggle="modal" data-target="#new-event-modal">+ Add new event</button>
+  <button class="btn btn-success" id="save-changes-btn">Save changes</button>
+
+  <div class="modal fade" id="new-event-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          New Event
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+
+        <div class="modal-body">
+          <%= form_tag({controller: "events", action: "create"}, method: "post", id: "create-new-event-form", multipart: true) do %>
+            <div class="form-field">
+              <%= label_tag("Title:") %>
+              <%= text_field_tag('data[title]') %>
+            </div>
+            <div class="form-field">
+              <%= label_tag("Date:") %>
+              <%= select_date Date.today, prefix: 'data[date]' %>
+            </div>
+            <div class="form-field">
+              <%= filepicker_field_tag 'data[picture]', {
+                class: "file-upload-button",
+                mimetypes: 'image/png,image/gif,image/jpeg' } %>
+            </div>
+            <%= submit_tag "Create Event", 
+              id: "create-new-event-btn",
+              class: "btn btn-primary" %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<%= filepicker_js_include_tag %>

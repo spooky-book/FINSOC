@@ -6,6 +6,9 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+# load environment variables
+Dotenv::Railtie.load
+
 module Finsoc
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
@@ -22,5 +25,7 @@ module Finsoc
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     # config.active_record.raise_in_transactional_callbacks = true
+
+    config.filepicker_rails.api_key = ENV['FILEPICKER_API_KEY']
   end
 end

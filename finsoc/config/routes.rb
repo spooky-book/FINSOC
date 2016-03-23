@@ -1,5 +1,15 @@
 Rails.application.routes.draw do
 
+  namespace :admin do
+    resources :events do
+      collection do
+        post 'update'
+        post 'create'
+        post 'delete'
+      end
+    end
+  end
+
   root 'main#index'
   
   get 'index' => 'main#index'

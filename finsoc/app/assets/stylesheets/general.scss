@@ -51,7 +51,8 @@ h1, h2 {
 
 button {
 	padding: 10px 16px;
-	font-size: 18px;
+	color: white;
+	font-size: 12px;
 	line-height: 1.3333333;
 	border-radius: 0px;
 	background-color: #0066CC;
@@ -59,10 +60,6 @@ button {
 	vertical-align: middle;
 	border: none;
 	outline: none;
-}
-
-button:hover {
-	background-color: #000099;
 }
 
 /* Footer */
