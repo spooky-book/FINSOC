@@ -21,3 +21,4 @@
 //= require footerFormat
 //= require sponsorCarousel
 //= require thumbnailPreview
+//= require newsDropdown

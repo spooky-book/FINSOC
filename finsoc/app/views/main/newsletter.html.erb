@@ -1,9 +1,21 @@
+
 <div class="newsletter-container">
   <div class="title">
     <h1>NEWSLETTER</h1>
   </div>
+  <div class="dropdown">
+  <button onclick="selectNews()" class="dropbtn">Select Newsletter</button>
+	  <div id="myDropdown" class="dropdown-content">
+	    <% @files.each do |file| %>
+	      <a onclick='changeFrame("<%= @fileLink[file] %>")' style="font-variant: small-caps;"><%= file %></a>
 
-  <iframe id="newsletter" src="https://docs.google.com/viewer?url=https://www.unswfinsoc.org.au<%= asset_path('newsletters/week6.pdf') %>&embedded=true">
+	    <% end %>
+	  </div>
+	  
+  </div>
+  <!--<iframe id="newsletter" src="https://docs.google.com/viewer?url=https://www.unswfinsoc.org.au<%= asset_path('newsletters/week6.pdf') %>&embedded=true">-->
+  <iframe id="newsletter" src="assets/newsletters/week4-36a763d313fbb51ae9ffaa9830be4c573bc69cda23a87d9966b2f4e7f4dd5bc6.pdf">
     <p>Your browser does not support iframes.</p>
   </iframe>
 </div>
+
