@@ -12,6 +12,7 @@ class MainController < ApplicationController
   end
 
   def newsletter
+    #Not ideal, fix later
     @paths = Dir["app/assets/pdf/newsletters/*"]
     @files = []
     @fileLink = Hash.new
