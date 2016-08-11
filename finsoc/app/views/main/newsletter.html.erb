@@ -3,16 +3,16 @@
   <div class="title">
     <h1>NEWSLETTER</h1>
   </div>
-  <div class="dropdown">
-  <button id="dropbtn" class="dropbtn">Select Newsletter</button>
-    <div id="myDropdown" class="dropdown-content">
+  <div class="newsdropdown">
+  <button id="selectNewsBtn" class="selectNewsBtn">Select Newsletter</button>
+    <div id="selectNewsDropdown" class="selectNewsContent">
       <% @files.each do |file| %>
         <a onclick='changeFrame("<%= @fileLink[file] %>")' style="font-variant: small-caps;"><%= file %></a>
       <% end %>
     </div>
   </div>
-  <!--<iframe id="newsletter" src="https://docs.google.com/viewer?url=https://www.unswfinsoc.org.au<%= asset_path('newsletters/week6.pdf') %>&embedded=true">-->
-  <iframe id="newsletter" src="assets/newsletters/week4-36a763d313fbb51ae9ffaa9830be4c573bc69cda23a87d9966b2f4e7f4dd5bc6.pdf">
+  <!--<iframe id="newsletter" src="assets/newsletters/week4-36a763d313fbb51ae9ffaa9830be4c573bc69cda23a87d9966b2f4e7f4dd5bc6.pdf">-->
+  <iframe id="newsletter" src=<%= asset_path('newsletters/week6.pdf') %>>
     <p>Your browser does not support iframes.</p>
   </iframe>
 </div>
