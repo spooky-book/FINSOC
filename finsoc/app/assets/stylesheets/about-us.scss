@@ -2,6 +2,10 @@
 	background-color: whitesmoke !important;
 	color: black;
 
+	a {
+		width: 240px;
+	}
+
 	.dot-points {
 		margin-left: 50px;
 	}
@@ -43,6 +47,7 @@
 
 	.ppl-title h3 {
 		font-size: 22px;
+		word-wrap: break-word;
 	}
 
 	.ppl-row {
