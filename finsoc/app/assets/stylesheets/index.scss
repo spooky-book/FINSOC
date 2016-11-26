@@ -96,10 +96,13 @@
 	  margin: 10px 20px;
 	}
 
-	#sponsor-carousel .item img {
+	#sponsors .item img {
 	  display: block;
-	  width: 100%;
-	  height: auto;
+	  margin-left: auto;
+	  margin-right: auto;
+	  width: 50%;
+	  height: 50%;
+	  text-align: center;
 	}
 
 	.owl-item {
