@@ -18,6 +18,6 @@
 //= require thumbnailPreview/modernizr.custom
 //= require thumbnailPreview/grid
 //= require footerFormat
-//= require sponsorCarousel
 //= require thumbnailPreview
+//= require navbarScroll
 //= require turbolinks

@@ -1,14 +1,14 @@
 // navbar expand width (must be before bootstrap)
-$grid-float-breakpoint: 1100px;
+$grid-float-breakpoint: 1000px;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome";
-@import "owl.carousel";
-@import "owl.theme";
 @import "thumbnailPreview/component";
 @import "thumbnailPreview/default";
+//@import "materialize";
 
+@import "variables";
 @import "general";
 @import "navbar";
 @import "index";
