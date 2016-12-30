@@ -1,26 +1,18 @@
 <div class="index-container">
-  <div id="events-carousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-     <li data-target="#events-carousel" data-slide-to="0" class="active"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
+  <div id="finsoc-banner">
     <div class="carousel-inner" role="listbox">
      <div class="item active carousel-img">
+        <%= link_to events_path, class: "event-box-link", method: :get do %>
       <div class="event-box">
-        <%= link_to events_path, class: "white-colour-link" do %>
-          <span class="glyphicon glyphicon-chevron-right arrow-link" aria-hidden="true"></span>
-          More events
-        <% end %>
+          <b>View Upcoming Events</b>
       </div>
-       <%= image_tag "events/default.jpg", alt: "UNSW FINSOC" %>
+        <% end %>
+       <%= image_tag "events/default.jpg", id:"finsoc-banner-logo", alt: "UNSW FINSOC" %>
      </div>
     </div>
-
   </div>
 
-  <div class="banner">
+  <div class="banner container">
     <div id="mission" class="jumbotron banner-inner">
       <div class="title">
         <h2>OUR MISSION</h2>
@@ -31,13 +23,22 @@
     </div>
   </div>
 
-  <div class="banner">
+  <div class="banner container">
     <div id="sponsors" class="jumbotron banner-inner">
       <div class="title">
         <h2>SPONSORS</h2>
       </div>
-        <div class="item"><%= image_tag "sponsors/GradMentor.png", alt: "Grad Mentor" %></div>
-        <div class="item"><%= image_tag "sponsors/FPA.png", alt: "FPA" %></div>
+      <div class="item">
+          <%= image_tag "sponsors/GradMentor.png", alt: "Grad Mentor" %>
+      </div>
+      <div class="item">
+          <%= image_tag "sponsors/FPA.png", alt: "FPA" %>
+      </div>
+      <%= link_to sponsorship_path, method: :get do %>
+          <button id="sponsors-link">
+              More Details
+          </button>
+      <% end %>
     </div>
   </div>
 </div>

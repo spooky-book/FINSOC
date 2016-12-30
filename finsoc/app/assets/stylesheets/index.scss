@@ -18,50 +18,108 @@
 
 	.content {
 		padding: 20px 50px;
+        color: $darkBlue2;
 	}
 
-	#mission {
-		background-color: #1b3978;
-	}	
-
-	#sponsors {
-		background-color: whitesmoke;
-		color: #007bb5;
-	}
-
-	/* Events */
-	#events-carousel {
+	#finsoc-banner {
 		position: relative;
+        background-image: image-url("events/defaultblank.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+		height: 300px;
+        margin-bottom: 20px;
+        box-shadow: $zdepth2;
+
+        @media (min-width: $screenTablet) {
+            height: 500px;
+        }
+
+        &-logo {
+            min-height: 100%;
+            min-width: 100%;
+            object-fit: cover;       /* Scale the image so it covers whole area, thus will likely crop */
+            object-position: center; /* Center the image within the element */
+	    }
 	}
 
 	.event-box {
 		position: absolute;
-		bottom: 20px;
-		right: 20px;
-		height: 50px;
-		z-index: 1000;
-		background-color: #00aced;
-		color: white;
+		bottom: 0px;
+        width: 100%;
+		background-color: white;
 		padding: 15px;
+        border: 2px;
+        border-style: solid;
+        text-align: center;
+        overflow: hidden;
+        box-shadow: $zdepth2;
+
+        @media (min-width: $screenMobile) {
+            left: 50%;
+            width: 440px;
+            bottom: 20px;
+            border: 0px;
+            margin-left: -220px;
+            border-radius: 10px;
+        }
+
+        &-link {
+		    color: $darkBlue1;
+            text-decoration: none;
+        }
+
+        @include hoverMixin(box-shadow, 500ms);
+
+        &:hover {
+            color: $lightBlue1;
+        }
 	}
 
-	.event-box h1 {
-		line-height: 130%;
+	#mission {
+		//background-color: #F5F5F5;
+		background-color: white;
+        border-radius:0px;
+        box-shadow: $zdepth2;
+        margin-bottom: 20px;
+	}	
+
+	#sponsors {
+		background-color: white;
+		color: #007bb5;
+        border-radius:0px;
+        margin-bottom: 20px;
+        box-shadow: $zdepth2;
+
+        & .title {
+            margin-bottom: 20px;
+        }
+
+        &-link {
+            background-color: $darkBlue2;
+            color: white;
+            @include hoverMixin(box-shadow, 500mx);
+            
+            &:hover {
+                background-color: $lightBlue2;
+            }
+        }
+
+        & .item img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            height: 50%;
+            text-align: center;
+            padding-bottom: 40px;
+	    }
+
 	}
 
 	@media (max-width: 800px) {
-		#events-carousel {
-			height: 300px;
-		}
-
 		.event-box > .description {
 			display: none;
-		}
-	}
-
-	@media (min-width: 800px) {
-		#events-carousel {
-			height: 500px;
 		}
 	}
 
@@ -75,41 +133,9 @@
 		overflow: hidden;
 	}
 
-	.carousel-img > img {
-		min-height: 100%;
-		min-width: 100%;
-		object-fit: cover;       /* Scale the image so it covers whole area, thus will likely crop */
-	  	object-position: center; /* Center the image within the element */
-	}
-
 	.arrow-link {
 		padding-right: 10px;
 		color: white;
 	}
 
-	/* Sponsors */
-	#sponsors .item img {
-	  display: block;
-	  margin-left: auto;
-	  margin-right: auto;
-	  width: 50%;
-	  height: 50%;
-	  text-align: center;
-	}
-
-	.owl-item {
-		height: 170px;
-		position: relative;
-	}
-
-	.owl-item img {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 50%;
-		transform: translate(0,-50%); /* For IE9 */
-		transform: translate3d(0,-50%,0); /* Modern Browsers - better performance */
-		margin: 0 auto;
-		padding: 15px;
-	}
 }
