@@ -2,12 +2,21 @@
   <div id="finsoc-banner">
     <div class="carousel-inner" role="listbox">
      <div class="item active carousel-img">
+        <div class="banner-text">
+            <h1>
+                Finance & Banking Society
+            </h1>
+            <h2>
+                University of New South Wales<br/>
+                FINSOC
+            </h2>
+        </div>
         <%= link_to events_path, class: "event-box-link", method: :get do %>
-      <div class="event-box">
-          <b>View Upcoming Events</b>
-      </div>
+          <div class="event-box">
+              <b>View Upcoming Events</b>
+          </div>
         <% end %>
-       <%= image_tag "events/default.jpg", id:"finsoc-banner-logo", alt: "UNSW FINSOC" %>
+       <%= image_tag "events/default-min.jpg", id:"finsoc-banner-logo", alt: "UNSW FINSOC" %>
      </div>
     </div>
   </div>
