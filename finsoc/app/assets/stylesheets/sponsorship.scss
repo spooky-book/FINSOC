@@ -1,14 +1,7 @@
 .sponsors-container {
-    margin-left: 3%;
-    margin-right: 3%;
 	padding-bottom: 40px;
 
-    @media (min-width: $screenMobile) {
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
-	.sponsor {
+    .sponsor {
 		padding-bottom: 20px;
         margin-bottom: 40px;
         box-shadow: $zdepth1;
