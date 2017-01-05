@@ -52,7 +52,6 @@
         border-style: solid;
         text-align: center;
         overflow: hidden;
-        box-shadow: $zdepth2;
 
         @media (min-width: $screenMobile) {
             left: 50%;
@@ -68,7 +67,7 @@
             text-decoration: none;
         }
 
-        @include hoverMixin(box-shadow, 500ms);
+        @include hoverMixin(box-shadow, 100ms);
 
         &:hover {
             color: $lightBlue1;
@@ -76,7 +75,6 @@
 	}
 
 	#mission {
-		//background-color: #F5F5F5;
 		background-color: white;
         border-radius:0px;
         box-shadow: $zdepth2;
@@ -97,7 +95,7 @@
         &-link {
             background-color: $darkBlue2;
             color: white;
-            @include hoverMixin(box-shadow, 500mx);
+            @include hoverMixin(box-shadow, 500ms);
             
             &:hover {
                 background-color: $lightBlue2;

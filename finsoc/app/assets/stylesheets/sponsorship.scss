@@ -1,8 +1,19 @@
 .sponsors-container {
+    margin-left: 3%;
+    margin-right: 3%;
 	padding-bottom: 40px;
+
+    @media (min-width: $screenMobile) {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 
 	.sponsor {
 		padding-bottom: 20px;
+        margin-bottom: 40px;
+        box-shadow: $zdepth1;
+        border-radius: 0px;
+        background-color: white;
 	}
 
 	.logo {
@@ -16,5 +27,19 @@
 
 	.apply {
 		text-align: center;
+        word-wrap: break-word;
+        font-size: 1.2em;
+        border-radius: 0px;
+        box-shadow: $zdepth1;
+        background-color: white;
+        padding: 20px;
+
+        &-text {
+            color: $darkBlue1;
+        }
+
+        &-link {
+            color: $black; 
+        }
 	}
 }

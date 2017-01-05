@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta id="vp" name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+    if (screen.width < 304)
+    {
+        var mvp = document.getElementById('vp');
+        mvp.setAttribute('content','width=304');
+    }
+    </script>
   <title>UNSW FINSOC</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
