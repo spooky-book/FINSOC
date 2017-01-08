@@ -29,7 +29,7 @@
         background-position: center center;
 		height: 300px;
         margin-bottom: 20px;
-        box-shadow: $zdepth2;
+        box-shadow: $zdepth1;
 
         @media (min-width: $screenTablet) {
             height: 500px;
@@ -109,7 +109,7 @@
 	#mission {
 		background-color: white;
         border-radius:0px;
-        box-shadow: $zdepth2;
+        box-shadow: $zdepth1;
         margin-bottom: 20px;
 	}	
 
@@ -118,19 +118,19 @@
 		color: #007bb5;
         border-radius:0px;
         margin-bottom: 20px;
-        box-shadow: $zdepth2;
+        box-shadow: $zdepth1;
 
         & .title {
             margin-bottom: 20px;
         }
 
         &-link {
-            background-color: $darkBlue2;
+            background-color: $darkBlue1;
             color: white;
             @include hoverMixin(box-shadow, 500ms);
             
             &:hover {
-                background-color: $lightBlue2;
+                background-color: $lightBlue1;
             }
         }
 

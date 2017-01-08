@@ -2,8 +2,7 @@
 	padding-bottom: 40px;
 
     .sponsor {
-		padding-bottom: 20px;
-        margin-bottom: 40px;
+        margin-bottom: $space-md;
         box-shadow: $zdepth1;
         border-radius: 0px;
         background-color: white;
@@ -35,4 +34,8 @@
             color: $black; 
         }
 	}
+    
+    .link {
+		float: right;
+    }
 }

@@ -25,6 +25,12 @@ $zdepth3: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 
 $zdepth4: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3);
 $zdepth5: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
 
+// Spacings
+$space-xs: 10px;
+$space-sm: 20px;
+$space-md: 40px;
+$space-lg: 60px;
+
 // Transition Mix In
 @mixin transitionDelay($type, $time) {
     -webkit-transition: $type $time linear;
@@ -43,5 +49,20 @@ $zdepth5: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12
 
     &:not( :hover ) {
         @include transitionDelay(box-shadow, $time);
+    }
+}
+
+// Link Mixins
+@mixin linkMixin() {
+    display: inline-block;
+
+    a {
+        font-weight: bold;
+        color: $darkBlue1;
+        text-decoration: none;
+
+        &:hover {
+            color: $lightBlue1;
+        }
     }
 }
