@@ -1,7 +1,6 @@
 // Place all the styles related to the main controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 
 .index-container {
 
@@ -83,19 +82,19 @@
         border: 2px;
         border-style: solid;
         text-align: center;
+        font-weight: 900;
+        letter-spacing: 1px;
         overflow: hidden;
 
         @media (min-width: $screenMobile) {
             left: 50%;
             width: 440px;
             bottom: 20px;
-            border: 0px;
             margin-left: -220px;
-            border-radius: 10px;
         }
 
         &-link {
-		    color: $darkBlue1;
+		    color: $darkBlue;
             text-decoration: none;
         }
 

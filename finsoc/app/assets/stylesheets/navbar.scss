@@ -11,6 +11,7 @@ body {
 
 	.navbar-header {
 		height: 65px;
+        padding-top: 3px;
 	}
 
 	.navbar-header > button {
@@ -18,10 +19,16 @@ body {
 	}
 
 	.navbar-toggle {
-		background-color: black;
+		background-color: $lightBlue1;
+        border-color: $lightBlue1;
 		margin-right: 15px;
         border-radius: 0px;
 	}
+
+	.navbar-toggle.collapsed {
+        background-color: $darkBlue;
+        border-color: $darkBlue;
+    }
 
 	#header-logo {
 		max-height: 30px;
@@ -37,6 +44,7 @@ body {
 		background-color: white;
 		font-size: 14px;
 		padding-right: 15px;
+        box-shadow: $zdepth4;
 
 		a {
 			font-weight: bold;
