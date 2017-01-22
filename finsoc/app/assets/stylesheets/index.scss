@@ -101,7 +101,9 @@
         @include hoverMixin(box-shadow, 100ms);
 
         &:hover {
-            color: $lightBlue1;
+            color: white;
+            letter-spacing: 3px;
+            background-color: $lightBlue1;
         }
 	}
 
@@ -109,7 +111,7 @@
 		background-color: white;
         border-radius:0px;
         box-shadow: $zdepth1;
-        margin-bottom: 20px;
+        margin-bottom: $space-md;
 	}	
 
 	#sponsors {
