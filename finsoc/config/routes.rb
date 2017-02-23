@@ -14,6 +14,12 @@ Rails.application.routes.draw do
 
   get 'contact-us' => 'main#contact_us'
 
+  get 'admin' => 'admin#index'
+
+  post 'admin' => 'admin#check_login' 
+
+	get 'control-panel' => 'admin#control_panel'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

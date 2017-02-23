@@ -18,8 +18,12 @@
 	}
 
 	.content {
-		padding: 20px 50px;
+	    padding: 0;
         color: $darkBlue2;
+
+        @media (min-width: $screenMobile) {
+	        padding: 20px 50px;
+        }
 	}
 
 	#finsoc-banner {
@@ -140,10 +144,14 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 50%;
-            height: 50%;
+            max-width: 50%;
+            max-height: 150px;
             text-align: center;
             padding-bottom: 40px;
+
+            @media (min-width: $screenMobile) {
+                max-height: 50%;
+            }
 	    }
 
 	}

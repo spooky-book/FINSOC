@@ -11,8 +11,9 @@
 	}
 
 	.logo {
-		width: 100%;
-		margin: 20px 0px;
+		max-width: 100%;
+		max-height: 100%;
+		margin: 20px auto;
 	}
 
 	.description {
