@@ -7,7 +7,38 @@
   <div id="upcoming-events-section">
     <div class="subsection-title">Latest Events</div>
     <!-- Events -->
-       <div class="event first-event">
+      <div class="event first-event">
+         <div class="event-inner">
+           <div class="event-img">
+             <%= image_tag "events/2017/howtobeemployable.png", alt: "How to be Employable : Event" %>
+           </div>
+           <div class="event-content">
+               <h2 class="event-content-title">
+                 How to be Employable
+               </h2>
+               <div class="row">
+                   <div class="event-content-date col-md-4">
+                       <%= image_tag "icons/calendar.svg", :class => "svg" %>
+                       <p>20 March 2017</p>
+                   </div>
+                   <div class="event-content-time col-md-4">
+                       <%= image_tag "icons/clock.svg", :class => "svg" %>
+                       <p>1-2PM</p>
+                   </div>
+                   <div class="event-content-location col-md-4">
+                       <%= image_tag "icons/location.svg", :class => "svg" %>
+                       <p>Law G23</p>
+                   </div>
+               </div>
+               <div class="event-content-details">
+                   <p>Struggling to find a job? Possibly looking to accelerate your career? Or possibly you’re just looking to improve your skills and employability. Get an insight into the best tips and advice on how to become employable in the financial services industry! View more details <%= link_to "here", "https://www.facebook.com/events/1280490915364373/", class: "link" %>
+                   </p>
+               </div>
+           </div>
+         </div>
+       </div> 
+
+       <div class="event past-event">
          <div class="event-inner">
            <div class="event-img">
              <%= image_tag "events/2017/subcomsem1app.png", alt: "Sub Committee Applications" %>
@@ -38,7 +69,7 @@
          </div>
     </div> 
 
-     <div class="event">
+     <div class="event past-event">
          <div class="event-inner">
            <div class="event-img">
              <%= image_tag "events/2017/meetgreetsem1.png", alt: "Meet and Greet at Science Lawn" %>
