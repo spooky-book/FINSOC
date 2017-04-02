@@ -7,7 +7,38 @@
   <div id="upcoming-events-section">
     <div class="subsection-title">Latest Events</div>
     <!-- Events -->
-       <div class="event first-event">
+    <div class="event first-event">
+         <div class="event-inner">
+           <div class="event-img">
+             <%= image_tag "events/2017/big4insight.png", alt: "Event: Big 4 Internship Insight Panel" %>
+           </div>
+           <div class="event-content">
+               <h2 class="event-content-title">
+                Big 4 Internship Insight Panel
+               </h2>
+               <div class="row">
+                   <div class="event-content-date col-md-4">
+                       <%= image_tag "icons/calendar.svg", :class => "svg" %>
+                       <p>6 April 2017</p>
+                   </div>
+                   <div class="event-content-time col-md-4">
+                       <%= image_tag "icons/clock.svg", :class => "svg" %>
+                       <p>6-8PM</p>
+                   </div>
+                   <div class="event-content-location col-md-4">
+                       <%= image_tag "icons/location.svg", :class => "svg" %>
+                       <p>ASB</p>
+                   </div>
+               </div>
+               <div class="event-content-details">
+                   <p>UNSW FINSOC invites YOU to our Big 4 Internship Insight Panel involving a panel of previous interns from the Big 4 professional services firms (PwC, EY, KPMG and Deloitte). The panelists come from a range of different divisions including Deals, Performance Improvement Advisory, Assurance and Tax. This will be a unique opportunity to gain an insider perspective into the companies from individuals who have experienced the recruitment process first-hand. Check out our facebook event <%= link_to "here", "https://www.facebook.com/events/1248408111879780/", class: "link" %>
+                   </p>
+               </div>
+           </div>
+         </div>
+      </div> 
+
+       <div class="event past-event">
          <div class="event-inner">
            <div class="event-img">
              <%= image_tag "events/2017/financialindustrybreakdown.png", alt: "Event :Financial Industry Breakdown" %>
