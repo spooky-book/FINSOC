@@ -125,7 +125,7 @@
         }
         
         &-details {
-            padding-left: 50px;
+            padding: 0 $space-sm;
 
             p {
                 margin-bottom: 0;
@@ -133,7 +133,7 @@
              
             @media (min-width: $screenMobile) {
                 margin-top: $space-xs;
-                padding-bottom: $space-xs;
+                padding: 0 $space-sm $space-xs;
             }
         }
     }
