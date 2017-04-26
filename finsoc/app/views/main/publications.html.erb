@@ -1,17 +1,40 @@
-<div class="publications-container container">
+<div class="PagePublications container">
 
   <div class="title">
     <h1>Newsletters</h1>
   </div>
   <div class="Card-text jumbotron">
-    View our Latest 
-    <b><%= link_to "Newsletters", newsletter_path, method: :get %></b>
+    <div class="PagePublications-linkContainer">
+      <%= link_to newsletter_path, method: :get do%>
+        <button class="PagePublications-link">
+          View Newsletters
+        </button>
+      <% end %>
+
+    </div>
   </div>
   <div class="title">
     <h1>Course Guide</h1>
   </div>
   <div class="Card-text jumbotron">
-    View our
-    <b><%= link_to "Guide to UNSW Finance Courses", course_guide_path, method: :get %></b>
+    <div class="Fade">
+      <p>
+        We are extremely proud to present UNSW Finance and Banking Society’s Course Guide for 2017.
+      <p>
+      <p>
+        The FINSOC Course Guide will provide you with a comprehensive look into the structure, course topics, industry connection, student reviews, and tips into every finance core subject and the 17 different elective subjects available within the finance major at UNSW. 
+      </p>
+      <p>
+        Our goal through this extensive guide is to provide valuable foresight for you regar...
+      </p>
+    </div>
+    <hr/>
+    <div class="PagePublications-linkContainer">
+      <%= link_to course_guide_path, method: :get do%>
+        <button class="PagePublications-link">
+          View Course Guide
+        </button>
+      <% end %>
+    </div>
   </div>
 </div>
