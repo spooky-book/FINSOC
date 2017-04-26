@@ -1,0 +1,18 @@
+// Link Component
+
+.Link {
+    @include hoverMixin(box-shadow, 500ms);
+    background-color: $darkBlue1;
+    color: white;
+
+    &:hover {
+        background-color: $lightBlue1;
+    }
+
+    &--inverse {
+        background-color: $lightBlue1;
+        &:hover {
+            background-color: $darkBlue1;
+        }
+    }
+}

@@ -31,22 +31,13 @@
             float: right;
             margin-top: 4px;
         }
+
+        &-links {
+            text-align: right;
+        }
 	}
 
 	&-introduction {
 		text-align: justify;
 	}
- 
-    .Card-text {
-        background-color: white;
-        margin-bottom: $space-md;
-        box-shadow: $zdepth1;
-        border-radius: 0px;
-        font-size: 16px;
-
-        @media (min-width: $screenTablet) {
-            padding-left: 15%;
-            padding-right: 15%;
-        }
-    }
 }

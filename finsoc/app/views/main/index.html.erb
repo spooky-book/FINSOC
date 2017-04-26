@@ -1,4 +1,4 @@
-<div class="index-container">
+<div class="PageIndex">
   <div id="finsoc-banner">
     <div class="carousel-inner" role="listbox">
      <div class="item active carousel-img">
@@ -21,36 +21,38 @@
     </div>
   </div>
 
-  <div class="banner container">
-    <div id="mission" class="jumbotron banner-inner">
+  <div class="container">
+  <div class="Card">
       <div class="title">
-        <h2>OUR MISSION</h2>
+        <h2>Our Mission</h2>
       </div>
-      <div class="content">
+      <div class="PageIndex-mission">
         <p>To become Australia&#8217;s leading student run society platform in assisting students on achieving their banking and financial planning career goals.</p>
       </div>
-    </div>
   </div>
 
-  <div class="banner container">
-    <div id="sponsors" class="jumbotron banner-inner">
-      <div class="title">
-        <h2>SPONSORS</h2>
+    <div class="Card Sponsors">
+      <div class="Card-text">
+        <div class="title">
+          <h2>Sponsors</h2>
+        </div>
+        <div class="Sponsor">
+            <%= image_tag "sponsors/GradMentor.png", alt: "Grad Mentor" %>
+        </div>
+        <div class="Sponsor">
+            <%= image_tag "sponsors/FPA.png", alt: "FPA" %>
+        </div>
+        <div class="Sponsor">
+            <%= image_tag "sponsors/Zookal.png", alt: "Zookal" %>
+        </div>
       </div>
-      <div class="item">
-          <%= image_tag "sponsors/GradMentor.png", alt: "Grad Mentor" %>
+      <div class="Card-footer Card-footer--center">
+        <%= link_to sponsorship_path, method: :get do %>
+            <button class="Link">
+                More Details
+            </button>
+        <% end %>
       </div>
-      <div class="item">
-          <%= image_tag "sponsors/FPA.png", alt: "FPA" %>
-      </div>
-      <div class="item">
-          <%= image_tag "sponsors/Zookal.png", alt: "FPA" %>
-      </div>
-      <%= link_to sponsorship_path, method: :get do %>
-          <button id="sponsors-link">
-              More Details
-          </button>
-      <% end %>
     </div>
   </div>
 </div>
