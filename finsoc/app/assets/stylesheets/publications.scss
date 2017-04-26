@@ -1,0 +1,15 @@
+.publications-container {
+	background-color: whitesmoke !important;
+
+	.text-content {
+        background-color: white;
+        box-shadow: $zdepth1;
+        border-radius: 1px;
+        margin-bottom: $space-md;
+
+        @media (min-width: $screenTablet) {
+            padding-left: 15%;
+            padding-right: 15%;
+        }
+    }
+}

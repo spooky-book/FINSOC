@@ -31,4 +31,14 @@ class MainControllerTest < ActionController::TestCase
     assert_response :success
   end
 
+  test "should get publications" do
+    get :publications
+    assert_response :success
+  end
+
+  test "should get course-guide" do
+    get :course-guide
+    assert_response :success
+  end
+
 end

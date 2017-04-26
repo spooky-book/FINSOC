@@ -16,4 +16,10 @@ class MainController < ApplicationController
 
   def contact_us
   end
+
+  def publications
+  end
+
+  def course_guide
+  end
 end
