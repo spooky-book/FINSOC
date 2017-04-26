@@ -27,8 +27,13 @@
 		}
 
         &-icon {
-            display: inline-block;
+            display: none;
             float: right;
+            margin-top: 4px;
+
+			@media (min-width: $screenMobile) {
+				display: inline-block;
+			}
         }
 
         &-links {
