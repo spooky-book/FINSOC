@@ -1,7 +1,7 @@
 // Card Component
 
 .Card {
-    padding: $space-md;
+    padding: $space-xs;
     background-color: white;
     margin-bottom: $space-lg;
     box-shadow: $zdepth1;
@@ -29,6 +29,10 @@
             text-align: center;
         }
     }
+
+	@media (min-width: $screenMobile) {
+		padding: $space-md;
+	}
 
     @media (min-width: $screenTablet) {
             padding-left: 15%;
