@@ -1,18 +1,25 @@
+@import "variables";
+
 .contact-us-container {
 
 	padding-bottom: 30px;
-	
 	background-color: whitesmoke !important;
 	color: #555555;
 
 	#contact-us-content {
 		background-color: white;
 		text-align: center;
-		margin: 20px 50px 50px 50px;
+        box-shadow: $zdepth1;
+		border-radius: 0px;
+		box-shadow: $zdepth1;
 	}
 
 	.contact-us-box {
 		padding: 25px;
+
+        iframe {
+            pointer-events: none;
+        }
 	}
 
 	.social-media-box {

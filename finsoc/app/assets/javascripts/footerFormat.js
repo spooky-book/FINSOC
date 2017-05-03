@@ -4,7 +4,7 @@ var Footer = {
         var footerStyle = window.getComputedStyle(footer);
         var height = "-" + footerStyle.height.toString();
         footer.style.bottom = height;
-        console.log(footerStyle.height.toString()); 
+        //console.log(footerStyle.height.toString()); 
     }
 };
 

@@ -1,20 +1,44 @@
+@import "variables";
+
 .sponsors-container {
 	padding-bottom: 40px;
 
-	.sponsor {
-		padding: 20px 50px;
+    .sponsor {
+        margin-bottom: $space-md;
+        box-shadow: $zdepth1;
+        border-radius: 0px;
+        background-color: white;
 	}
 
 	.logo {
-		width: 100%;
-		margin: 20px 0px;
+		max-width: 100%;
+		max-height: 100%;
+		margin: 20px auto;
 	}
 
 	.description {
-		padding: 10px 50px;
+		padding-bottom: 20px;
 	}
 
 	.apply {
 		text-align: center;
+        word-wrap: break-word;
+        font-size: 1.2em;
+        border-radius: 0px;
+        box-shadow: $zdepth1;
+        background-color: white;
+        padding: 20px;
+
+        &-text {
+            color: $darkBlue1;
+        }
+
+        &-link {
+            color: $black; 
+        }
 	}
+    
+    .link {
+		float: right;
+    }
 }

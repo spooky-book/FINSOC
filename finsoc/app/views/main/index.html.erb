@@ -1,43 +1,58 @@
-<div class="index-container">
-  <div id="events-carousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-     <li data-target="#events-carousel" data-slide-to="0" class="active"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
+<div class="PageIndex">
+  <div id="finsoc-banner">
     <div class="carousel-inner" role="listbox">
      <div class="item active carousel-img">
-      <div class="event-box">
-        <%= link_to events_path, class: "white-colour-link" do %>
-          <span class="glyphicon glyphicon-chevron-right arrow-link" aria-hidden="true"></span>
-          More events
+        <div class="banner-text">
+            <h1>
+                Finance & Banking Society
+            </h1>
+            <h2>
+                University of New South Wales<br/>
+                FINSOC
+            </h2>
+        </div>
+        <%= link_to events_path, class: "event-box-link", method: :get do %>
+          <div class="event-box">
+              <b>UPCOMING EVENTS</b>
+          </div>
         <% end %>
-      </div>
-       <%= image_tag "events/default.jpg", alt: "UNSW FINSOC" %>
+       <%= image_tag "events/default-min.jpg", id:"finsoc-banner-logo", alt: "UNSW FINSOC" %>
      </div>
     </div>
-
   </div>
 
-  <div class="banner">
-    <div id="mission" class="jumbotron banner-inner">
+  <div class="container">
+  <div class="Card">
       <div class="title">
-        <h2>OUR MISSION</h2>
+        <h2>Our Mission</h2>
       </div>
-      <div class="content">
+      <div class="PageIndex-mission">
         <p>To become Australia&#8217;s leading student run society platform in assisting students on achieving their banking and financial planning career goals.</p>
       </div>
-    </div>
   </div>
 
-  <div class="banner">
-    <div id="sponsors" class="jumbotron banner-inner">
-      <div class="title">
-        <h2>SPONSORS</h2>
+    <div class="Card Sponsors">
+      <div class="Card-text">
+        <div class="title">
+          <h2>Sponsors</h2>
+        </div>
+        <div class="Sponsor">
+            <%= image_tag "sponsors/GradMentor.png", alt: "Grad Mentor" %>
+        </div>
+        <div class="Sponsor">
+            <%= image_tag "sponsors/FPA.png", alt: "FPA" %>
+        </div>
+        <div class="Sponsor">
+            <%= image_tag "sponsors/Zookal.png", alt: "Zookal" %>
+        </div>
       </div>
-        <div class="item"><%= image_tag "sponsors/GradMentor.png", alt: "Grad Mentor" %></div>
-        <div class="item"><%= image_tag "sponsors/FPA.png", alt: "FPA" %></div>
+      <div class="Card-footer Card-footer--center">
+        <%= link_to sponsorship_path, method: :get do %>
+            <button class="Link">
+                More Details
+            </button>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>

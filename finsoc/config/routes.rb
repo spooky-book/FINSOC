@@ -10,9 +10,19 @@ Rails.application.routes.draw do
 
   get 'about-us' => 'main#about_us'
 
-  get 'newsletter' => 'main#newsletter'
-
   get 'contact-us' => 'main#contact_us'
+
+  # Publications 
+  get 'publications' => 'main#publications'
+  get 'newsletter' => 'main#newsletter'
+  get 'course-guide' => 'main#course_guide'
+
+  # Admin
+  get 'admin' => 'admin#index'
+
+  post 'admin' => 'admin#check_login' 
+
+	get 'control-panel' => 'admin#control_panel'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

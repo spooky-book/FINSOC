@@ -1,68 +1,118 @@
 // Place all the styles related to the main controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "variables";
 
-.index-container {
+.PageIndex {
 
-	.jumbotron {
-		text-align: center;
-		margin-bottom: 0px;
+	&-mission {
+	    padding: 0;
+        color: $darkBlue2;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 35px;
+        text-align: center;
 	}
 
-	.banner-inner {
-		width: 100%;
-		min-height: 200px;
-		background-color: black;
-		color: white;
-	}
-
-	.content {
-		padding: 20px 50px;
-	}
-
-	#mission {
-		background-color: #1b3978;
-	}	
-
-	#sponsors {
-		background-color: whitesmoke;
-		color: #007bb5;
-	}
-
-	/* Events */
-	#events-carousel {
+	#finsoc-banner {
 		position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+		height: 300px;
+        margin-bottom: 20px;
+        box-shadow: $zdepth1;
+
+        @media (min-width: $screenTablet) {
+            height: 500px;
+        }
+
+        &-logo {
+            min-height: 100%;
+            min-width: 100%;
+            object-fit: cover;       /* Scale the image so it covers whole area, thus will likely crop */
+            object-position: center; /* Center the image within the element */
+	    }
 	}
+    
+    .banner-text {
+       position: absolute;
+        bottom: 40%;
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-weight: 500;
+
+        h1 {
+            font-weight: 700;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-size: 2.5em;
+            text-shadow: 1.5px 1.5px #000000;
+            letter-spacing: 2px;
+
+            @media (min-width: $screenTablet) {
+                font-size: 3.5em;
+            }
+        }
+
+        h2 {
+            font-size: 1em;
+            color: $grey;
+            letter-spacing: 1px;
+
+            @media (min-width: $screenTablet) {
+                font-size: 1.8em;
+            }
+        }
+    }
 
 	.event-box {
 		position: absolute;
-		bottom: 20px;
-		right: 20px;
-		height: 50px;
-		z-index: 1000;
-		background-color: #00aced;
-		color: white;
+		bottom: 0px;
+        width: 100%;
+		background-color: white;
 		padding: 15px;
+        border: 2px;
+        border-style: solid;
+        text-align: center;
+        font-weight: 900;
+        letter-spacing: 1px;
+        overflow: hidden;
+
+        @media (min-width: $screenMobile) {
+            left: 50%;
+            width: 440px;
+            bottom: 20px;
+            margin-left: -220px;
+        }
+
+        &-link {
+		    color: $darkBlue;
+            text-decoration: none;
+        }
+
+        @include hoverMixin(box-shadow, 100ms);
+
+        &:hover {
+            color: white;
+            letter-spacing: 3px;
+            background-color: $lightBlue1;
+        }
 	}
 
-	.event-box h1 {
-		line-height: 130%;
-	}
+    .Sponsor img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 50%;
+            max-height: 150px;
+            text-align: center;
+            padding-bottom: 40px;
 
-	@media (max-width: 800px) {
-		#events-carousel {
-			height: 300px;
-		}
+            @media (min-width: $screenMobile) {
+                max-height: 50%;
+            }
 
-		.event-box > .description {
-			display: none;
-		}
-	}
-
-	@media (min-width: 800px) {
-		#events-carousel {
-			height: 500px;
-		}
 	}
 
 	.carousel-inner {
@@ -73,51 +123,5 @@
 		width: 100%;
 		height: 100%;
 		overflow: hidden;
-	}
-
-	.carousel-img > img {
-		min-height: 100%;
-		min-width: 100%;
-		object-fit: cover;       /* Scale the image so it covers whole area, thus will likely crop */
-	  	object-position: center; /* Center the image within the element */
-	}
-
-	.arrow-link {
-		padding-right: 10px;
-		color: white;
-	}
-
-	/* Sponsors */
-	#sponsor-carousel {
-		height: 200px;
-	}
-
-	#sponsor-carousel .item {
-	  margin: 10px 20px;
-	}
-
-	#sponsors .item img {
-	  display: block;
-	  margin-left: auto;
-	  margin-right: auto;
-	  width: 50%;
-	  height: 50%;
-	  text-align: center;
-	}
-
-	.owl-item {
-		height: 170px;
-		position: relative;
-	}
-
-	.owl-item img {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 50%;
-		transform: translate(0,-50%); /* For IE9 */
-		transform: translate3d(0,-50%,0); /* Modern Browsers - better performance */
-		margin: 0 auto;
-		padding: 15px;
 	}
 }
