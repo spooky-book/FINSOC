@@ -7,14 +7,47 @@
   <div id="upcoming-events-section">
     <div class="subsection-title">Latest Events:</div>
     <!-- Events -->
+      
     <div class="event first-event">
+      <div class="event-inner">
+        <div class="event-img">
+         <%= image_tag "events/2017/cfachallenge.jpg", alt: "Event: CFA Institute Research Challenge" %>
+        </div>
+        <div class="event-content">
+          <h2 class="event-content-title">
+           CFA Institute Research Challenge
+          </h2>
+          <div class="row">
+              <div class="event-content-date col-md-4">
+                  <%= image_tag "icons/calendar.svg", :class => "svg" %>
+                  <p>2 August 2017</p>
+              </div>
+              <div class="event-content-time col-md-4">
+                  <%= image_tag "icons/clock.svg", :class => "svg" %>
+                  <p>11:59PM</p>
+              </div>
+              <div class="event-content-location col-md-4">
+                  <%= image_tag "icons/location.svg", :class => "svg" %>
+                  <p>NONE</p>
+              </div>
+           </div>
+           <div class="event-content-details">
+             <p>
+             UNIT & FINSOC are proud to announce the 2017/18 CFA Research Institute Research Challenge! In this annual competition, the representing team will be required to evaluate a designated stock and recommend a suitable strategy to a panel of industry professionals based upon a comprehensive financial valuation. Throughout the program, you will receive mentoring and training from industry professionals to refine your financial modelling and problem solving acumen in order to prepare you for a globally recognised stage. Check out our facebook event <%= link_to "here", "https://www.facebook.com/events/330228724069284", class: "link", :target => "_blank" %>
+             </p>
+          </div>
+        </div>
+      </div>
+    </div> 
+      
+    <div class="event past-event">
       <div class="event-inner">
         <div class="event-img">
          <%= image_tag "events/2017/fieldday.jpg", alt: "Event: Finsoc Waffles" %>
         </div>
         <div class="event-content">
           <h2 class="event-content-title">
-           Free Waffle Pops
+           Field Day
           </h2>
           <div class="row">
               <div class="event-content-date col-md-4">
