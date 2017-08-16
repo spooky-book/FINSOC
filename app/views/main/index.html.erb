@@ -1,59 +1,106 @@
 <div class="PageIndex">
-  <div id="finsoc-banner">
-    <div class="carousel-inner" role="listbox">
-     <div class="item active carousel-img">
-        <div class="banner-text">
-            <h1>
-                Finance & Banking Society
-            </h1>
-            <h2>
-                University of New South Wales<br/>
-                FINSOC
-            </h2>
-        </div>
-        <%= link_to course_guide_path, class: "event-box-link", method: :get do %>
-          <div class="event-box">
-              <!--<b>UPCOMING EVENTS</b>-->
-              <b>VIEW FINANCE COURSE GUIDE</b>
+    <div id="finsoc-banner">
+      <div class="carousel-inner" role="listbox">
+       <div class="item active carousel-img">
+          <div class="banner-text">
+              <h1>
+                  Finance & Banking Society
+              </h1>
+              <h2>
+                  University of New South Wales<br/>
+                  FINSOC
+              </h2>
           </div>
-        <% end %>
-       <%= image_tag "events/default-min.jpg", id:"finsoc-banner-logo", alt: "UNSW FINSOC" %>
-     </div>
-    </div>
-  </div>
-
-  <div class="container">
-  <div class="Card">
-      <div class="title">
-        <h2>Our Mission</h2>
-      </div>
-      <div class="PageIndex-mission">
-        <p>To become Australia&#8217;s leading student run society platform in assisting students on achieving their banking and financial planning career goals.</p>
-      </div>
-  </div>
-
-    <div class="Card Sponsors">
-      <div class="Card-text">
-        <div class="title">
-          <h2>Sponsors</h2>
-        </div>
-        <div class="Sponsor">
-            <%= image_tag "sponsors/GradMentor.png", alt: "Grad Mentor" %>
-        </div>
-        <div class="Sponsor">
-            <%= image_tag "sponsors/FPA.png", alt: "FPA" %>
-        </div>
-        <div class="Sponsor">
-            <%= image_tag "sponsors/Zookal.png", alt: "Zookal" %>
-        </div>
-      </div>
-      <div class="Card-footer Card-footer--center">
-        <%= link_to sponsorship_path, method: :get do %>
-            <button class="Link">
-                More Details
-            </button>
-        <% end %>
+          <% if false %>
+            <!-- Hidden for now -->
+            <%= link_to course_guide_path, class: "event-box-link", method: :get do %>
+              <div class="event-box">
+                  <!--<b>UPCOMING EVENTS</b>-->
+                  <b>VIEW FINANCE COURSE GUIDE</b>
+              </div>
+            <% end %>
+          <% end %>
+         <%= image_tag "events/default-min.jpg", id:"finsoc-banner-logo", alt: "UNSW FINSOC" %>
+       </div>
       </div>
     </div>
-  </div>
+
+    <div class="PageIndex-featured">
+      <%= link_to course_guide_path, :class=> "PageIndex-courseGuideFeature", method: :get do %>
+            <div class="PageIndex-courseGuideFeature-text">
+              <p>View our</p>
+              <p>Finance Course Guide</p>
+             <span class="glyphicon glyphicon-info-sign PageIndex-courseGuideFeature-icon" aria-hidden="true"></span> 
+            </div>
+        <% end %>
+        <div class="Event">
+            <div class="Event-imgContainer">
+              <a href="/events">
+                  <div class="Event-imgContainer-link">
+                      <%= image_tag "events/2017/mockcentre.jpg", :class=> "Event-imgContainer-img Event-imgContainer-img--showRight", alt: "Mock Assessment Center Workshop" %>
+                  </div>
+              </a>
+            </div>
+            <div class="Event-title">
+            Mock Assessment Ctr.
+            </div>
+        </div>
+        <div class="Event Event-past">
+            <div class="Event-imgContainer">
+                <a href="/events">
+                    <%= image_tag "events/2017/cfachallenge.jpg", :class=> "Event-imgContainer-img", alt: "Grad Mentor" %>
+                </a>
+            </div>
+            <div class="Event-title">
+            CFA Challenge
+            </div>
+        </div>
+        <div class="Event Event-past">
+            <div class="Event-imgContainer">
+                <a href="/events">
+                    <div class="Event-imgContainer-link">
+                        <%= image_tag "events/2017/fieldday.jpg", :class=> "Event-imgContainer-img Event-imgContainer-img--showRight", alt: "Field Day" %>
+                    </div>
+                </a>
+            </div>
+            <div class="Event-title">
+            Field Day
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="Card PageIndex-missionCard">
+            <div class="title">
+                <h2>Our Mission</h2>
+            </div>
+            <div class="PageIndex-missionCard-text">
+                <p>To become Australia&#8217;s leading student run society platform in assisting students on achieving their banking and financial planning career goals.</p>
+            </div>
+        </div>
+
+        <div class="Card Sponsors">
+          <div class="Card-text">
+            <div class="title">
+              <h2>Sponsors</h2>
+            </div>
+            <div class="Sponsor">
+                <%= image_tag "sponsors/GradMentor.png", alt: "Grad Mentor" %>
+            </div>
+            <div class="Sponsor">
+                <%= image_tag "sponsors/FPA.png", alt: "FPA" %>
+            </div>
+            <div class="Sponsor">
+                <%= image_tag "sponsors/Zookal.png", alt: "Zookal" %>
+            </div>
+          </div>
+          <div class="Card-footer Card-footer--center">
+            <%= link_to sponsorship_path, method: :get do %>
+                <button class="Link">
+                    More Details
+                </button>
+            <% end %>
+          </div>
+        </div>
+    </div>
 </div>

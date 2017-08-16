@@ -35,23 +35,33 @@ $space-md: 40px;
 $space-lg: 60px;
 
 // Transition Mix In
-@mixin transitionDelay($type, $time) {
-    -webkit-transition: $type $time linear;
-    -moz-transition: $type $time linear;
-    -o-transition: $type $time linear;
-    -ms-transition: $type $time linear;
-    transition: $type $time linear;
+@mixin transitionDelay($type, $time, $style) {
+    -webkit-transition: $type $time $style;
+    -moz-transition: $type $time $style;
+    -o-transition: $type $time $style;
+    -ms-transition: $type $time $style;
+    transition: $type $time $style;
 }
 
 // Hover Mix In
-@mixin hoverMixin($type, $time) {
+@mixin hoverShadow($depth, $time) {
     &:hover {
-        box-shadow: $zdepth4;
-        @include transitionDelay(box-shadow, $time);
+        box-shadow: $depth;
+        @include transitionDelay(box-shadow, $time, linear);
     }
 
     &:not( :hover ) {
-        @include transitionDelay(box-shadow, $time);
+        @include transitionDelay(box-shadow, $time, linear);
+    }
+}
+@mixin hoverOpacity($val, $time) {
+    &:hover {
+        opacity: $val;
+        @include transitionDelay(opacity, $time, ease-out);
+    }
+
+    &:not( :hover ) {
+        @include transitionDelay(opacity, $time, ease-out);
     }
 }
 

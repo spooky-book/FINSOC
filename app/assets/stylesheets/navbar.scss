@@ -60,7 +60,7 @@ body {
 
 		li.navbar-item:hover {
 			background-color: #32607A;
-            @include transitionDelay(background-color, 500ms);
+            @include transitionDelay(background-color, 500ms, linear);
             
             .navbar-item-link {
                 color: white;

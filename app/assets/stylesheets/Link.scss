@@ -1,7 +1,7 @@
 // Link Component
 
 .Link {
-    @include hoverMixin(box-shadow, 500ms);
+    @include hoverShadow($zdepth4, 500ms);
     background-color: $darkBlue1;
     color: white;
 

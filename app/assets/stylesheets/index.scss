@@ -5,14 +5,18 @@
 
 .PageIndex {
 
-	&-mission {
-	    padding: 0;
-        color: $darkBlue2;
-        font-size: 24px;
-        font-weight: bold;
-        line-height: 35px;
-        text-align: center;
-	}
+    &-missionCard {
+        margin-top: $space-md;
+
+        &-text {
+            padding: 0;
+            color: $darkBlue2;
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 35px;
+            text-align: center;
+        }
+    }
 
 	#finsoc-banner {
 		position: relative;
@@ -20,7 +24,6 @@
         background-repeat: no-repeat;
         background-position: center center;
 		height: 300px;
-        margin-bottom: 20px;
         box-shadow: $zdepth1;
 
         @media (min-width: $screenTablet) {
@@ -91,7 +94,7 @@
             text-decoration: none;
         }
 
-        @include hoverMixin(box-shadow, 100ms);
+        @include hoverShadow($zdepth4, 100ms);
 
         &:hover {
             color: white;
@@ -124,4 +127,137 @@
 		height: 100%;
 		overflow: hidden;
 	}
+
+    &-featured {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 0 $space-sm;
+        margin-top: $space-xs;
+    }
+
+    &-courseGuideLink {
+        display: block;
+    }
+
+    $featuredHeightMobile: 90px;
+    
+    &-courseGuideFeature {
+        @include hoverShadow($zdepth4, 200ms);
+        $featureHeight: 180px;
+        border-radius: 4px;
+        background-image: image-url('laptop.jpg');
+        background-position-y: -100px;
+        background-size: cover;
+        box-shadow: $zdepth2;
+        cursor: pointer;
+        height: $featuredHeightMobile;
+        margin-top: $space-xs;
+        position: relative;
+        width: 300px;
+        flex-basis: 100%;
+
+        &-text {
+            color: white;
+            font-size: 24px;
+            line-height: 24px;
+            font-weight: bold;
+            margin: $space-xs;
+
+            @media (min-width: $screenMobile) {
+                font-size: 32px;
+                line-height: 32px;
+                margin: $space-md $space-sm;
+            }
+        }
+
+        &-icon {
+            color : white;
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            width: 30px;
+            height: 30px;
+            z-index: 1000;
+        }
+
+        @media (min-width: $screenMobile) {
+            height: $featureHeight;
+        }
+
+        @media (min-width: $screenTablet) {
+            flex-basis: auto;
+            background-position-y: 0;
+        }
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    
+    .Event {
+        $imgWidth: 150px;
+        $mobileImgWidth: 75px;
+        max-height: $featuredHeightMobile;
+        margin-top: $space-xs;
+
+        @media (min-width: $screenMobile) {
+            max-height: 180px;
+        }
+
+        &-title {
+            color: $darkBlue;
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-top: $space-xxs;
+            overflow: hidden;
+            text-align: center;
+            width: $mobileImgWidth;
+            max-height: 24px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+
+            @media (min-width: $screenMobile) {
+                width: $imgWidth;
+            }
+        }
+
+        &-imgContainer {
+            @include hoverShadow($zdepth4, 200ms);
+            border: 1px solid $darkBlue;
+            border-radius: 50%;
+            box-shadow: $zdepth1;
+            height: $mobileImgWidth;
+            overflow: hidden;
+            width: $mobileImgWidth;
+            background: black;
+
+            @media (min-width: $screenMobile) {
+                height: $imgWidth;
+                width: $imgWidth;
+            }
+
+            &-img {
+                @include hoverOpacity(1, 500ms);
+                opacity: 0.95;
+                height: $imgWidth;
+                cursor: pointer;
+                width: auto;
+                -webkit-backface-visibility: hidden;
+
+                &--showRight {
+                    transform: translateX(-40%);
+                }
+
+                &--showLeft {
+                    transform: translateX(40%);
+                }
+            }
+        }
+
+        &-past {
+            opacity: 0.6;
+        }
+    }
 }
