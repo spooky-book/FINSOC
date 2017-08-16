@@ -22,4 +22,7 @@ class MainController < ApplicationController
 
   def course_guide
   end
+
+  def hsbc_womens_mentoring
+  end
 end

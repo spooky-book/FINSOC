@@ -12,6 +12,8 @@ Rails.application.routes.draw do
 
   get 'contact-us' => 'main#contact_us'
 
+  get 'hsbc-womens-mentoring' => 'main#hsbc_womens_mentoring'
+
   # Publications 
   get 'publications' => 'main#publications'
   get 'newsletter' => 'main#newsletter'
