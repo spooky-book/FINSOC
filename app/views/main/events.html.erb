@@ -7,8 +7,42 @@
   <div id="upcoming-events-section">
     <div class="subsection-title">Latest Events:</div>
     <!-- Events -->
-      
     <div class="event first-event">
+      <div class="event-inner">
+        <div class="event-img">
+         <%= image_tag "events/2017/mockcentre.jpg", alt: "Event: Mock Assessment Centre Workshop" %>
+        </div>
+        <div class="event-content">
+          <h2 class="event-content-title">
+            Mock Assessment Centre Workshop
+          </h2>
+          <div class="row">
+              <div class="event-content-date col-md-4">
+                  <%= image_tag "icons/calendar.svg", :class => "svg" %>
+                  <p>21 August 2017</p>
+              </div>
+              <div class="event-content-time col-md-4">
+                  <%= image_tag "icons/clock.svg", :class => "svg" %>
+                  <p>3:30PM</p>
+              </div>
+              <div class="event-content-location col-md-4">
+                  <%= image_tag "icons/location.svg", :class => "svg" %>
+                  <p>Ainsworth G01</p>
+              </div>
+           </div>
+           <div class="event-content-details">
+             <p>
+        
+In collaboration with UNSW Careers and Employment, the UNSW Finance and Banking Society will be running a Mock Assessment Centre Workshop! The Assessment Centre is the major recruitment process many firms utilise to realise your communication, teamwork, presentation, active listening and problem solving skills. It is critical to your chances in receiving a partner/manager interview and getting that internship/graduate position!
+
+Make sure you register in this <%= link_to "FORM", "https://goo.gl/forms/lwu2LJNwpyGUU9ok2", class: "link", :target => "_blank" %>
+             </p>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    <div class="event past-event">
       <div class="event-inner">
         <div class="event-img">
          <%= image_tag "events/2017/cfachallenge.jpg", alt: "Event: CFA Institute Research Challenge" %>
