@@ -12,7 +12,9 @@
 		  <div id="top-navbar" class="navbar-collapse collapse">
 		      <ul class="nav navbar-nav navbar-right">
 						<li class="navbar-item"><%= link_to "Events", events_path, class:"navbar-item-link", method: :get %></li>
-                  		<li class="navbar-item"><%= link_to "HSBC Mentor Program", hsbc_womens_mentoring_path, class:"navbar-item-link", method: :get %></li>
+            <% if false %>
+              <li class="navbar-item"><%= link_to "HSBC Mentor Program", hsbc_womens_mentoring_path, class:"navbar-item-link", method: :get %></li>
+            <% end %>
 						<li class="navbar-item"><%= link_to "Sponsorship", sponsorship_path, class:"navbar-item-link", method: :get %></li>
             <li class="navbar-item navbar-dropdown">
               <%= link_to about_us_path, class:"dropdown-toggle navbar-item-link", method: :get do %>

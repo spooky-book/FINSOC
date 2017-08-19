@@ -4,59 +4,86 @@
 </div>
 <br/> 
 <div class="sponsors-container container">
-      <div class="sponsor jumbotron">
-        <div class="row">
-          <div class="col-md-4">
-            <%= image_tag "sponsors/GradMentor.png", class: "logo" %>
-          </div>
-          <div class="col-md-8 description">
-              Grad Mentor specializes in finding the most talented graduates and developing into valuable long term contributors to the industry.<br/>
-              They accomplish this by serving as a direct channel between graduates and the leading firms of the financial planning industry.<br/>
-              Highly engaged members of FINSOC will undoubtedly find value from our partnership with Grad Mentor.<br/><hr/>
-                <%= link_to "More Info", "http://gradmentor.com.au/", class: "link" %>
-          </div>
-          </div>
-      </div>
+  <%= render partial: "main/sponsors/template", locals: {
+    name: "EY",
+    image_file: "ey.svg",
+    detail: "",
+    site_url: "http://www.ey.com.au"
+  }%>
+  <%= render partial: "main/sponsors/template", locals: {
+    name: "HSBC",
+    image_file: "hsbc.png",
+    detail: "",
+    site_url: "https://www.hsbc.com.au"
+  }%>
+  <%= render partial: "main/sponsors/template", locals: {
+    name: "Alternative Investment Management Association ",
+    image_file: "aima.jpg",
+    detail: "",
+    site_url: "https://www.aima.org"
+  }%> 
+  <%= render partial: "main/sponsors/template", locals: {
+    name: "CFA Institute",
+    image_file: "cfa.jpg",
+    detail: "",
+    site_url: "https://www.cfainstitute.org"
+  }%>
+  <%= render partial: "main/sponsors/template", locals: {
+    name: "Gresham",
+    image_file: "gresham.png",
+    detail: "",
+    site_url: "https://www.gresham.com.au/"
+  }%>
+  <%= render partial: "main/sponsors/template", locals: {
+    name: "Nomura",
+    image_file: "nomura.svg",
+    detail: "",
+    site_url: "http://www.nomura.com/"
+  }%>
+  <%= render partial: "main/sponsors/template", locals: {
+    name: "GradMentor",
+    image_file: "gradmentor.jpg",
+    detail: "Grad Mentor specializes in finding the most talented graduates and developing into valuable long term contributors to the industry.\nThey accomplish this by serving as a direct channel between graduates and the leading firms of the financial planning industry.\nHighly engaged members of FINSOC will undoubtedly find value from our partnership with Grad Mentor.",
+    site_url: "http://www.gradmentor.com.au"
+  }%>
 
-      <div class="sponsor jumbotron">
-        <div class="row">
-          <div class="col-md-4">
-            <%= image_tag "sponsors/FPA.png", class: "logo" %>
-          </div>
-          <div class="col-md-8 description">
-              The Financial Planning Association of Australia (FPA) is Australia's leading professional community of financial planners.<br/>
-              Financial planning is about helping people make better financial decisions for themselves and their families. Together with our 11,000 members, we are shaping the future of financial planning to secure a better financial future for Australians.<br/>
-              We are the only Australian body licensed to administer and deliver the CERTIFIED FINANCIAL PLANNER® designation, the highest designation in financial planning, recognised in 26 countries around the world. <br/><hr/>
-              <%= link_to "More Info", "http://fpa.com.au/", class: "link" %>
-          </div>
-        </div>
-      </div>
+  <%= render partial: "main/sponsors/template", locals: {
+    name: "Financial Planning Association of Australia",
+    image_file: "fpa.jpg",
+    detail: "The Financial Planning Association of Australia (FPA) is Australia's leading professional community of financial planners.\nFinancial planning is about helping people make better financial decisions for themselves and their families.\nWe are the only Australian body licensed to administer and deliver the CERTIFIED FINANCIAL PLANNER® designation, the highest designation in financial planning, recognised in 26 countries around the world.",
+    site_url: "http://www.fpa.com.au"
+  }%> 
 
-      <div class="sponsor jumbotron">
-        <div class="row">
-          <div class="col-md-4">
-            <%= image_tag "sponsors/Zookal.png", class: "logo" %>
-          </div>
-          <div class="col-md-8 description">
-            <i>
-                "Zookal was created by university students in Australia in 2011. After personally experiencing the pain of expensive textbooks, the founders decided that they would create a better option for students. 
-                <br/>
-                Here was born the idea of textbook rental, allowing students to save up to 70% off on their required course materials - saving students hundreds and even thousands of dollars throughout their degree."
-              <br/><hr/>
-            </i>
-              <%= link_to "More Info", "http://www.zookal.com/", class: "link" %>
-          </div>
-        </div>
-      </div>
-      <a name="apply"></a>
-      <div class="title">
-        <h1>APPLY</h1>
-      </div>
+   <%= render partial: "main/sponsors/template", locals: {
+    name: "Zookal",
+    image_file: "zookal.png",
+    detail: "Zookal was created by university students in Australia in 2011. After personally experiencing the pain of expensive textbooks, the founders decided that they would create a better option for students.\nHere was born the idea of textbook rental, allowing students to save up to 70% off on their required course materials - saving students hundreds and even thousands of dollars throughout their degree.",
+    site_url: "http://www.zookal.com.au"
+  }%> 
+  <%= render partial: "main/sponsors/template", locals: {
+    name: "Challenger",
+    image_file: "challenger.png",
+    detail: "",
+    site_url: "http://www.challenger.com.au/"
+  }%>
+  <%= render partial: "main/sponsors/template", locals: {
+    name: "Luminis Partners",
+    image_file: "luminis.jpg",
+    detail: "",
+    site_url: "http://www.luminispartners.com/"
+  }%>
 
-      <div class="apply">
-          <p class="apply-text">
-          Help sponsor FINSOC by sending us an email at
-          </p>
-          <b class="apply-link">sponsorship@unswfinsoc.org.au</b>
-      </div>
+  <a name="apply"></a>
+  <div class="title">
+    <h1>APPLY</h1>
+  </div>
+
+  <a href="mailto:sponsorship@unswfinsoc.org.au">
+  <div class="apply">
+      <p class="apply-text">
+      Help sponsor FINSOC by sending us an email at
+      </p>
+      <b class="apply-link">sponsorship@unswfinsoc.org.au</b>
+  </div>
+  </a>
 </div>

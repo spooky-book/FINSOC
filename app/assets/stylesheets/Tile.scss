@@ -1,0 +1,100 @@
+//Sponsor: unfinished
+
+.SponsorTile {
+    $mobileHeight: 80px;
+    $normalHeight: 180px;
+    background-color: white;
+    box-shadow: $zdepth1;
+    border-radius: 10px;
+    display: flex;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: $space-xs;
+
+    @media (min-width: $screenTablet) {
+        height: $normalHeight;
+        margin-bottom: $space-sm;
+    }
+
+    &--imgFit {
+        width: 100%;
+        height: 100%;
+    }
+
+   &-imgContainer {
+       //border: 1px solid lightgrey;
+       flex: 1;
+       height: $mobileHeight;
+       width: 100%;
+       text-align: center;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+
+       @media (min-width: $screenTablet) {
+           height: 100%;
+       }
+
+       img {
+           max-height: 100%;
+           max-width: 100%;
+       }
+   }
+
+   &-text {
+        flex: 3;
+        padding: $space-xs;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+
+        @media (min-width: $screenTablet) {
+            padding: $space-md;
+            height: $normalHeight;
+        }
+
+        &-title {
+            flex: 1;
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+            font-weight: 700;
+
+            @media (min-width: $screenTablet) {
+                font-size: 2.3rem;
+                line-height: 2.3rem;
+            }
+        }
+
+        &-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+            @media (min-width: $screenTablet) {
+                display: none;
+            }
+
+            &-link {
+                font-size: 1rem;
+                font-weight: bold;
+                color: $darkBlue1;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+        }
+
+        &-content{
+            display: none;
+            font-size: 11px;
+            line-height: 11px;
+            flex: 4;
+
+            @media (min-width: $screenTablet) {
+                display: block;
+                flex: 2;
+                font-size: 1.5rem;
+                line-height: 1.5rem;
+            }
+        }
+   }
+}

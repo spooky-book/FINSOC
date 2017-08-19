@@ -103,20 +103,30 @@
         }
 	}
 
-    .Sponsor img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            max-width: 50%;
-            max-height: 150px;
-            text-align: center;
-            padding-bottom: 40px;
+    &-sponsorsList {
+        align-items: center;
+        display: flex;
+        height: 100px;
+        justify-content: space-between;
+        margin-bottom: $space-sm;
 
-            @media (min-width: $screenMobile) {
-                max-height: 50%;
+        @media (min-width: $space-xs) {
+            justify-content: space-evenly;
+        }
+
+        &-item {
+            flex:1;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                max-height: 100%;
+                max-width: 100%;
             }
-
-	}
+        }
+    }
 
 	.carousel-inner {
 		height: 100%;
@@ -200,7 +210,7 @@
         $imgWidth: 150px;
         $mobileImgWidth: 75px;
         max-height: $featuredHeightMobile;
-        margin-top: $space-xs;
+        margin: $space-xs $space-xs 0;
 
         @media (min-width: $screenMobile) {
             max-height: 180px;

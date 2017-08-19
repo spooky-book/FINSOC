@@ -12,15 +12,14 @@
               </h2>
           </div>
           <% if false %>
-            <!-- Hidden for now -->
-            <%= link_to course_guide_path, class: "event-box-link", method: :get do %>
+            <%= link_to hsbc_womens_mentoring_path, class: "event-box-link", method: :get do %>
               <div class="event-box">
                   <!--<b>UPCOMING EVENTS</b>-->
-                  <b>VIEW FINANCE COURSE GUIDE</b>
+                  <b>VIEW HSBC MENTORING PROGRAM</b>
               </div>
             <% end %>
           <% end %>
-         <%= image_tag "events/default-min.jpg", id:"finsoc-banner-logo", alt: "UNSW FINSOC" %>
+         <%= image_tag "events/default-min-2.jpg", id:"finsoc-banner-logo", alt: "UNSW FINSOC" %>
        </div>
       </div>
     </div>
@@ -79,19 +78,51 @@
             </div>
         </div>
 
-        <div class="Card Sponsors">
+        <div class="Card">
           <div class="Card-text">
             <div class="title">
               <h2>Sponsors</h2>
             </div>
-            <div class="Sponsor">
-                <%= image_tag "sponsors/GradMentor.png", alt: "Grad Mentor" %>
+            <div class="PageIndex-sponsorsList"> 
+              <div class="PageIndex-sponsorsList-item">
+                  <%= image_tag "sponsors/cfa.jpg", alt: "CFA Institute" %>
+              </div>
+              <div class="PageIndex-sponsorsList-item">
+                  <%= image_tag "sponsors/ey.svg", alt: "EY" %>
+              </div>
+              <div class="PageIndex-sponsorsList-item">
+                  <%= image_tag "sponsors/hsbc.png", alt: "HSBC" %>
+              </div>
             </div>
-            <div class="Sponsor">
-                <%= image_tag "sponsors/FPA.png", alt: "FPA" %>
+            <div class="PageIndex-sponsorsList">
+              <div class="PageIndex-sponsorsList-item">
+                  <%= image_tag "sponsors/aima.jpg", alt: "AIMA" %>
+              </div>
+              <div class="PageIndex-sponsorsList-item">
+                  <%= image_tag "sponsors/gresham.png", alt: "Gresham" %>
+              </div> 
+              <div class="PageIndex-sponsorsList-item">
+                  <%= image_tag "sponsors/nomura.svg", alt: "Nomura" %>
+              </div>
             </div>
-            <div class="Sponsor">
-                <%= image_tag "sponsors/Zookal.png", alt: "Zookal" %>
+            <div class="PageIndex-sponsorsList">
+              <div class="PageIndex-sponsorsList-item">
+                  <%= image_tag "sponsors/gradmentor.jpg", alt: "GradMentor" %>
+              </div>
+              <div class="PageIndex-sponsorsList-item">
+                  <%= image_tag "sponsors/fpa.jpg", alt: "FPA" %>
+              </div>
+              <div class="PageIndex-sponsorsList-item">
+                  <%= image_tag "sponsors/zookal.png", alt: "Zookal" %>
+              </div>
+            </div>
+            <div class="PageIndex-sponsorsList">
+              <div class="PageIndex-sponsorsList-item">
+                  <%= image_tag "sponsors/luminis.jpg", alt: "Luminis Partners" %>
+              </div>
+              <div class="PageIndex-sponsorsList-item">
+                  <%= image_tag "sponsors/challenger-logo.png", alt: "Challenger" %>
+              </div>
             </div>
           </div>
           <div class="Card-footer Card-footer--center">
