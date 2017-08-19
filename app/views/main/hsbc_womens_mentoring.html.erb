@@ -38,44 +38,53 @@
           
         <div class="Card">
           <div class="Card-text">
+            <div class="title">
+              <h2>How do I apply?</h2>
+            </div>
+            <span class="FinsocHighlight">
+              Applications are ROLLING and close Wednesday 23rd August 11:59pm, with interviews being undertaken as early as week 5!<br/><br/>
+              If you have any questions please do not hesitate to contact Kelly Wu, Vice President (Operations), at kelly.wu@unswfinsoc.org.au.<br/><br/>
+            </span>
             <div class="Card-footer--center">
                 <%= link_to '<button class="Link"> APPLY NOW</button>'.html_safe, "https://goo.gl/forms/ii93adretsUMlh5j2", :target => "_blank" %>  <br/><br/>              
-          </div>
-            <span class="FinsocHighlight">
-
-                Applications are ROLLING and close Wednesday 23rd August 11:59pm, with interviews being undertaken as early as week 5!<br/><br/>
-
-                If you have any questions please do not hesitate to contact Kelly Wu, Vice President (Operations), at kelly.wu@unswfinsoc.org.au.<br/><br/>
-             </span>
             </div>
+          </div>
         </div> 
         <div class="Card">
           <div class="Card-text">
             <div class="title">
               <h2>Sponsers</h2><br/><br/>
             </div>
-            <div class="Sponsor">
-                <%= image_tag "sponsors/cfa.png", alt: "CFA Institute" %>
+            <div class="SponsorsList">
+              <div class="SponsorsList-item">
+                  <%= image_tag "sponsors/cfa.jpg", alt: "CFA Institute" %>
+              </div>
+              <div class="SponsorsList-item">
+                  <%= image_tag "sponsors/challenger.png", alt: "Challenger" %>
+              </div>
             </div>
-            <div class="Sponsor">
-                <%= image_tag "sponsors/challenger.png", alt: "Challenger" %>
+            <div class="SponsorsList">
+              <div class="SponsorsList-item">
+                  <%= image_tag "sponsors/gresham.png", alt: "Gresham" %>
+              </div> 
+              <div class="SponsorsList-item">
+                  <%= image_tag "sponsors/ey.png", :class=> "sponsorImg", alt: "EY" %>
+              </div>
             </div>
-            <div class="Sponsor">
-                <%= image_tag "sponsors/gresham.jpg", alt: "Gresham" %>
-            </div>
-            <div class="Sponsor">
-                <%= image_tag "sponsors/luminis.jpg", alt: "Luminis" %>
-            </div>
-            <div class="Sponsor">
-                <%= image_tag "sponsors/ey.png", :class=> "sponsorImg", alt: "EY" %>
-            </div>
-            <div class="Sponsor">
-                <%= image_tag "sponsors/nomura.jpg", alt: "Nomura" %>
-            </div>
-              <div class="Sponsor">
+            <div class="SponsorsList"> 
+              <div class="SponsorsList-item">
+                  <%= image_tag "sponsors/luminis.jpg", alt: "Luminis" %>
+              </div>
+              <div class="SponsorsList-item">
                 <%= image_tag "sponsors/aima.jpg",  :class=> "sponsorImg",  alt: "Aima" %>
+              </div>
             </div>
+            <div class="SponsorsList"> 
+              <div class="SponsorsList-item SponsorsList-item--nomura">
+                  <%= image_tag "sponsors/nomura.svg", alt: "Nomura" %>
+              </div>
             </div>
+          </div>
         </div>    
     </div>
 </div>

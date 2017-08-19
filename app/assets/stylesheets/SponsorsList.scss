@@ -1,0 +1,32 @@
+.SponsorsList {
+    align-items: center;
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    margin-bottom: $space-sm;
+
+    @media (min-width: $space-xs) {
+        justify-content: space-evenly;
+    }
+
+    &-item {
+        flex:1;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            max-height: 100%;
+            max-width: 100%;
+        }
+
+        &--nomura {
+            flex-basis: 33%;
+            flex-grow: 0;
+            flex-shrink: 0;
+        }
+    }
+}
+
+
