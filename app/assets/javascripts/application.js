@@ -21,3 +21,4 @@
 //= require thumbnailPreview
 //= require navbarScroll
 //= require turbolinks
+//= require cardlist

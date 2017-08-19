@@ -54,6 +54,8 @@ $space-lg: 60px;
         @include transitionDelay(box-shadow, $time, linear);
     }
 }
+
+// Hover Opacity
 @mixin hoverOpacity($val, $time) {
     &:hover {
         opacity: $val;

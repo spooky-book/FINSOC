@@ -1,6 +1,7 @@
 //Sponsor: unfinished
 
 .SponsorTile {
+    $this: SponsorTile;
     $mobileHeight: 80px;
     $normalHeight: 180px;
     background-color: white;
@@ -95,6 +96,20 @@
                 font-size: 1.5rem;
                 line-height: 1.5rem;
             }
+
+            &.sponsor-content-show {
+                display: block;
+            }
         }
    }
+
+    .flip-up {
+        transform: rotate(180deg);
+        @include transitionDelay(transform, 150ms, ease);
+    }
+
+    .flip-down {
+        transform: rotate(0deg);
+        @include transitionDelay(transform, 150ms, ease);
+    }
 }
