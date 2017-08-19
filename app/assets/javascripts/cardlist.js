@@ -10,8 +10,7 @@ $(document).ready(function() {
   Array.from(document.querySelectorAll('.SponsorTile')).forEach(function(elem) {
     var arrowEl = elem.querySelector('span[data-arrow]');
     var contentEl = elem.querySelector('div[data-content]');
-    console.log(arrowEl);
-    arrowEl.addEventListener('click', function() {
+    elem.addEventListener('click', function() {
       if (contentEl.classList.contains('sponsor-content-show')) {
         contentEl.classList.remove('sponsor-content-show');
         arrowEl.classList.remove('flip-up');
