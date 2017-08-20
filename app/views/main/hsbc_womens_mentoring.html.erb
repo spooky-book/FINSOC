@@ -1,16 +1,11 @@
 <div class="PageHSBCMentor">
-    <div id="">
-        <div class="carousel-inner" role="listbox">
-            <div class="item active carousel-img">
-             <%= image_tag "events/2017/hsbcmentoringcrop.jpg", id:"finsoc-banner-logo", alt: "UNSW FINSOC" %>
-           </div>
-          </div>
+    <div class="carousel-inner" role="listbox">
+      <div class="item active carousel-img">
+       <%= image_tag "events/2017/hsbcmentoringcrop.jpg", alt: "UNSW FINSOC: HSBC Women's Mentoring Event" %>
+     </div>
     </div>
     <br/>
     <div class="container">
-        <!---<div class="title">
-          <h1>HSBC Women in Finance</h1>
-        </div>--->
         <div class="Card">
           <div class="Card-text">
             <div class="title">
@@ -42,49 +37,22 @@
               <h2>How do I apply?</h2>
             </div>
             <span class="FinsocHighlight">
-              Applications are ROLLING and close Wednesday 23rd August 11:59pm, with interviews being undertaken as early as week 5!<br/><br/>
-              If you have any questions please do not hesitate to contact Kelly Wu, Vice President (Operations), at kelly.wu@unswfinsoc.org.au.<br/><br/>
+              <p>Applications are ROLLING and close Wednesday 23rd August 11:59pm, with interviews being undertaken as early as week 5!</p>
+              <p>If you have any questions please do not hesitate to contact Kelly Wu, Vice President (Operations), at kelly.wu@unswfinsoc.org.au.</p>
             </span>
-            <div class="Card-footer--center">
-                <%= link_to '<button class="Link"> APPLY NOW</button>'.html_safe, "https://goo.gl/forms/ii93adretsUMlh5j2", :target => "_blank" %>  <br/><br/>              
+            <div class="Card-footer Card-footer--center">
+              <%= link_to '<button class="Link"> APPLY NOW</button>'.html_safe, "https://goo.gl/forms/ii93adretsUMlh5j2", :target => "_blank" %>
             </div>
           </div>
         </div> 
         <div class="Card">
           <div class="Card-text">
             <div class="title">
-              <h2>Sponsors</h2><br/><br/>
+              <h2>Sponsors</h2>
             </div>
-            <div class="SponsorsList">
+            <div class="SponsorsList PageHSBCMentor-sponsors">
               <div class="SponsorsList-item">
-                  <%= image_tag "sponsors/hsbc2.png", alt: "HSBC" %>
-              </div>
-              <div class="SponsorsList-item">
-                  <%= image_tag "sponsors/cfa.jpg", alt: "CFA Institute" %>
-              </div>
-              <div class="SponsorsList-item">
-                  <%= image_tag "sponsors/challenger.png", alt: "Challenger" %>
-              </div>
-            </div>
-            <div class="SponsorsList">
-              <div class="SponsorsList-item">
-                  <%= image_tag "sponsors/gresham.png", alt: "Gresham" %>
-              </div> 
-              <div class="SponsorsList-item">
-                  <%= image_tag "sponsors/ey.png", :class=> "sponsorImg", alt: "EY" %>
-              </div>
-            </div>
-            <div class="SponsorsList"> 
-              <div class="SponsorsList-item">
-                  <%= image_tag "sponsors/luminis.jpg", alt: "Luminis" %>
-              </div>
-              <div class="SponsorsList-item">
-                <%= image_tag "sponsors/aima.jpg",  :class=> "sponsorImg",  alt: "Aima" %>
-              </div>
-            </div>
-            <div class="SponsorsList"> 
-              <div class="SponsorsList-item SponsorsList-item--nomura">
-                  <%= image_tag "sponsors/nomura.svg", alt: "Nomura" %>
+               <%= image_tag "events/2017/hsbcmentoringsponsors.png", alt: "HSBC Women's Mentoring Sponsors" %>
               </div>
             </div>
           </div>

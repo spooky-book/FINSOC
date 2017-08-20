@@ -3,7 +3,6 @@
  * - SponsorsList
  */
 
-
 $(document).ready(function() {
   // Bind Events to Dom Elements
 
@@ -21,6 +20,5 @@ $(document).ready(function() {
         arrowEl.classList.add('flip-up');
       }
     });
-
   });
 });
