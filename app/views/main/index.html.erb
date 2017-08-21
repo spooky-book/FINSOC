@@ -11,7 +11,7 @@
                   FINSOC
               </h2>
           </div>
-          <% if false %>
+          <% if  show_new_page %>
             <%= link_to hsbc_womens_mentoring_path, class: "event-box-link", method: :get do %>
               <div class="event-box">
                   <!--<b>UPCOMING EVENTS</b>-->
@@ -83,6 +83,7 @@
             <div class="title">
               <h2>Sponsors</h2>
             </div>
+            <% if !show_new_page %>
             <div class="SponsorsList"> 
               <div class="SponsorsList-item">
                   <%= image_tag "sponsors/fpa.jpg", alt: "FPA" %>
@@ -94,7 +95,8 @@
               <%= image_tag "sponsors/logozookal.png", alt: "Zookal" %>
               </div>
             </div>
-            <% if false %>
+          <% end %>
+            <% if show_new_page %>
             <div class="SponsorsList"> 
               <div class="SponsorsList-item">
                   <%= image_tag "sponsors/cfa.jpg", alt: "CFA Institute" %>
@@ -139,10 +141,19 @@
           <% end %>
           </div>
           <div class="Card-footer Card-footer--center">
-            <%= link_to sponsorship_path, method: :get do %>
-                <button class="Link">
-                    More Details
-                </button>
+            <% if !show_new_page %>
+              <%= link_to sponsorship_path, method: :get do %>
+                  <button class="Link">
+                      More Details
+                  </button>
+              <% end %>
+            <%  else %>
+              <%= link_to newsponsors_path, method: :get do %>
+                  <button class="Link">
+                      More Details
+                  </button>
+              <% end %>
+
             <% end %>
           </div>
         </div>
