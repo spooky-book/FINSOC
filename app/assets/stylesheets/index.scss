@@ -4,7 +4,6 @@
 @import "variables";
 
 .PageIndex {
-
     &-missionCard {
         margin-top: $space-md;
 
@@ -37,20 +36,29 @@
             object-position: center; /* Center the image within the element */
 	    }
 	}
-    
-    .banner-text {
-       position: absolute;
-        bottom: 40%;
-        width: 100%;
-        text-align: center;
+
+     &-carousel-img {
+        display: flex;
+    }
+
+   
+    &-carousel-text {
+        bottom: 30%;
         color: white;
         font-weight: 500;
+        position: absolute;
+        text-align: center;
+        text-shadow: 1.5px 1.5px #000000;
+        width: 100%;
+
+        @media (min-width: $screenMobile) {
+            bottom: 40%;
+        }
 
         h1 {
             font-weight: 700;
             font-family: 'Roboto Condensed', sans-serif;
             font-size: 2.5em;
-            text-shadow: 1.5px 1.5px #000000;
             letter-spacing: 2px;
 
             @media (min-width: $screenTablet) {
@@ -60,7 +68,6 @@
 
         h2 {
             font-size: 1em;
-            color: $grey;
             letter-spacing: 1px;
 
             @media (min-width: $screenTablet) {
@@ -184,8 +191,12 @@
     .Event {
         $imgWidth: 150px;
         $mobileImgWidth: 75px;
-        max-height: $featuredHeightMobile;
-        margin: $space-xs $space-xs 0;
+        $tabletImgWidth: 130px;
+        display: flex;
+        flex: 1;
+        align-items: center;
+        flex-direction: column;
+        margin: $space-xs 0 0;
 
         @media (min-width: $screenMobile) {
             max-height: 180px;
@@ -204,6 +215,10 @@
             text-overflow: ellipsis;
 
             @media (min-width: $screenMobile) {
+                width: $tabletImgWidth;
+            }
+
+            @media (min-width: $screenLaptopSm) {
                 width: $imgWidth;
             }
         }
@@ -217,8 +232,15 @@
             overflow: hidden;
             width: $mobileImgWidth;
             background: black;
+            display: flex;
+            align-items: center;
 
             @media (min-width: $screenMobile) {
+                height: $tabletImgWidth;
+                width: $tabletImgWidth;
+            }
+
+            @media (min-width: $screenLaptopSm) {
                 height: $imgWidth;
                 width: $imgWidth;
             }
