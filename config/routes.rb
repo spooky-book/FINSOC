@@ -19,6 +19,9 @@ Rails.application.routes.draw do
   get 'newsletter' => 'main#newsletter'
   get 'course-guide' => 'main#course_guide'
 
+  # TODO, Remove:
+  get 'new' => 'main#new'
+  get 'newsponsors' => 'main#newsponsors'
   # Admin
   get 'admin' => 'admin#index'
 
