@@ -85,6 +85,18 @@
             </div>
             <div class="SponsorsList"> 
               <div class="SponsorsList-item">
+                  <%= image_tag "sponsors/fpa.jpg", alt: "FPA" %>
+              </div>
+              <div class="SponsorsList-item">
+              <%= image_tag "sponsors/gradmentor.jpg", alt: "GradMentor" %>
+              </div>
+              <div class="SponsorsList-item">
+              <%= image_tag "sponsors/logozookal.png", alt: "Zookal" %>
+              </div>
+            </div>
+            <% if false %>
+            <div class="SponsorsList"> 
+              <div class="SponsorsList-item">
                   <%= image_tag "sponsors/cfa.jpg", alt: "CFA Institute" %>
               </div>
               <div class="SponsorsList-item">
@@ -124,6 +136,7 @@
                   <%= image_tag "sponsors/challenger-logo.png", alt: "Challenger" %>
               </div>
             </div>
+          <% end %>
           </div>
           <div class="Card-footer Card-footer--center">
             <%= link_to sponsorship_path, method: :get do %>
