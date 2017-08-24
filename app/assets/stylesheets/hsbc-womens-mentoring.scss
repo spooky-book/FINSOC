@@ -1,38 +1,10 @@
 .PageHSBCMentor {
     $this: PageHSBCMentor;
 
-    &-missionCard {
-        margin-top: $space-md;
-
-        &-text {
-            padding: 0;
-            color: $darkBlue2;
-            font-size: 24px;
-            font-weight: bold;
-            line-height: 35px;
-            text-align: center;
-        }
+    &-text {
+        text-align: justify;
     }
- 
-	#hsbc-banner {
-		position: relative;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-		height: 550px;
-        box-shadow: $zdepth1;
 
-        @media (min-width: $screenTablet) {
-            height: 550px;
-        }
-
-        &-logo {
-            min-height: 100%;
-            min-width: 100%;
-            object-fit: cover;       /* Scale the image so it covers whole area, thus will likely crop */
-            object-position: center; /* Center the image within the element */
-	    }
-	}
 	.carousel-inner {
 		height: 100%;
         box-shadow: $zdepth1;
