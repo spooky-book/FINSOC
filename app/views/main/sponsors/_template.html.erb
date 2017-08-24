@@ -1,4 +1,4 @@
-<div id="<%= id %>" class="SponsorTile ">
+<div id="<%= id %>" class="SponsorTile <% if detail == "" %>SponsorTile--noDetail<% end %>">
   <div class="SponsorTile-imgContainer">
     <%= image_tag "sponsors/"+image_file %>
   </div>

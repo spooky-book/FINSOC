@@ -39,7 +39,7 @@
        img {
            max-height: 100%;
            max-width: 100%;
-       }
+       } 
    }
 
    &-text {
@@ -70,7 +70,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            
+
             @media (min-width: $screenTablet) {
                 display: none;
             }
@@ -101,6 +101,26 @@
                 display: block;
             }
         }
+   }
+
+   &.#{$this}--noDetail {
+       .#{$this}-imgContainer {
+           flex: 3;
+       }
+
+       .#{$this}-text-footer,
+       .#{$this}-text-content {
+           display: none;
+       }
+
+       .#{$this}-text {
+            justify-content: space-evenly;
+
+           &-title {
+               flex: none;
+               text-align: center;
+           }
+       }
    }
 
     .flip-up {
