@@ -141,19 +141,10 @@
           <% end %>
           </div>
           <div class="Card-footer Card-footer--center">
-            <% if !show_new_page %>
-              <%= link_to sponsorship_path, method: :get do %>
-                  <button class="Link">
-                      More Details
-                  </button>
-              <% end %>
-            <%  else %>
-              <%= link_to newsponsors_path, method: :get do %>
-                  <button class="Link">
-                      More Details
-                  </button>
-              <% end %>
-
+            <%= link_to sponsorship_path, method: :get do %>
+                <button class="Link">
+                    More Details
+                </button>
             <% end %>
           </div>
         </div>
