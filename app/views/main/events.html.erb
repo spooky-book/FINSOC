@@ -7,7 +7,72 @@
   <div id="upcoming-events-section">
     <div class="subsection-title">Latest Events:</div>
     <!-- Events -->
+           
     <div class="event first-event">
+      <div class="event-inner">
+        <div class="event-img">
+         <%= image_tag "events/2017/reverseinterview.png", alt: "Event: Reverse Interview" %>
+        </div>
+        <div class="event-content">
+          <h2 class="event-content-title">
+           Reverse Interview
+          </h2>
+          <div class="row">
+              <div class="event-content-date col-md-4">
+                  <%= image_tag "icons/calendar.svg", :class => "svg" %>
+                  <p>18 September 2017</p>
+              </div>
+              <div class="event-content-time col-md-4">
+                  <%= image_tag "icons/clock.svg", :class => "svg" %>
+                  <p>6:00PM</p>
+              </div>
+              <div class="event-content-location col-md-4">
+                  <%= image_tag "icons/location.svg", :class => "svg" %>
+                  <p>MAT310</p>
+              </div>
+           </div>
+           <div class="event-content-details">
+             <p>
+             Have you ever wanted to flip the tables and be the one to ask the questions? Well with our Reverse Interview Event organised in collaboration with Austern, the UNSW Finance and Banking Society is excited to provide you with the unique opportunity to do exactly that! Take this chance to fire any questions you have from career progression and job searching to leadership skills. Make sure you register in this <%= link_to "FORM", "https://goo.gl/forms/UWUzwDObEoFbOtWg2", class: "link", :target => "_blank" %> and check out our facebook event <%= link_to "here", "https://www.facebook.com/events/1185620631568042", class: "link", :target => "_blank" %>
+             </p>
+          </div>
+        </div>
+      </div>
+    </div> 
+    
+      <div class="event past-event">
+      <div class="event-inner">
+        <div class="event-img">
+         <%= image_tag "events/2017/ibpottinger.jpg", alt: "Event: IB Pottinger CEO Insights" %>
+        </div>
+        <div class="event-content">
+          <h2 class="event-content-title">
+           Pottinger CEO Insights | Breaking into IB
+          </h2>
+          <div class="row">
+              <div class="event-content-date col-md-4">
+                  <%= image_tag "icons/calendar.svg", :class => "svg" %>
+                  <p>6 September 2017</p>
+              </div>
+              <div class="event-content-time col-md-4">
+                  <%= image_tag "icons/clock.svg", :class => "svg" %>
+                  <p>6:00PM</p>
+              </div>
+              <div class="event-content-location col-md-4">
+                  <%= image_tag "icons/location.svg", :class => "svg" %>
+                  <p>LAW G23</p>
+              </div>
+           </div>
+           <div class="event-content-details">
+             <p>
+             In collaboration with Pottinger, the UNSW Finance and Banking Society is excited to present our 2017 Breaking into Investment Banking session. You will have the chance to meet and listen to Pottinger's CEO as well as other representatives, where you will be able to receive advice and insights on how to break into IB, so it's definitely not to be missed! Check out our facebook event <%= link_to "here", "https://www.facebook.com/events/122749801711528", class: "link", :target => "_blank" %>
+             </p>
+          </div>
+        </div>
+      </div>
+    </div> 
+      
+    <div class="event past-event">
       <div class="event-inner">
         <div class="event-img">
          <%= image_tag "events/2017/mockcentre.jpg", alt: "Event: Mock Assessment Centre Workshop" %>
