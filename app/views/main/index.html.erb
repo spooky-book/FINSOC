@@ -11,14 +11,12 @@
               FINSOC
             </h2>
           </div>
-          <% if  show_new_page %>
-            <%= link_to hsbc_womens_mentoring_path, class: "event-box-link", method: :get do %>
+            <%= link_to newsletter_path, class: "event-box-link", method: :get do %>
               <div class="event-box">
                   <!--<b>UPCOMING EVENTS</b>-->
-                  <b>VIEW HSBC MENTORING PROGRAM</b>
+                  <b>Directors Positions now open!</b>
               </div>
             <% end %>
-          <% end %>
          <%= image_tag "events/default-min-2.jpg", id:"finsoc-banner-logo", alt: "UNSW FINSOC" %>
        </div>
       </div>
@@ -83,21 +81,7 @@
             <div class="title">
               <h2>Sponsors</h2>
             </div>
-            <% if !show_new_page %>
-            <div class="SponsorsList"> 
-              <div class="SponsorsList-item">
-                  <%= image_tag "sponsors/fpa.jpg", alt: "FPA" %>
-              </div>
-              <div class="SponsorsList-item">
-              <%= image_tag "sponsors/gradmentor.jpg", alt: "GradMentor" %>
-              </div>
-              <div class="SponsorsList-item">
-              <%= image_tag "sponsors/logozookal.png", alt: "Zookal" %>
-              </div>
-            </div>
-          <% end %>
-            <% if show_new_page %>
-            <div class="SponsorsList"> 
+            <div class="SponsorsList">
               <div class="SponsorsList-item">
                   <%= image_tag "sponsors/cfa.jpg", alt: "CFA Institute" %>
               </div>
@@ -138,7 +122,6 @@
                   <%= image_tag "sponsors/challenger-logo.png", alt: "Challenger" %>
               </div>
             </div>
-          <% end %>
           </div>
           <div class="Card-footer Card-footer--center">
             <%= link_to sponsorship_path, method: :get do %>
