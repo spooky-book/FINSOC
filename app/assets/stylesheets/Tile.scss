@@ -39,6 +39,7 @@
        img {
            max-height: 100%;
            max-width: 100%;
+           padding: 10px;
        } 
    }
 
@@ -105,20 +106,29 @@
 
    &.#{$this}--noDetail {
        .#{$this}-imgContainer {
-           flex: 3;
+           //flex: 3;
+           //margin-left: 20px;
+           //margin-right: 20px;
+       }
+
+       img {
+           //flex: 3;
+           padding-left: 14% !important;
+           //margin-right: 20px;
        }
 
        .#{$this}-text-footer,
        .#{$this}-text-content {
-           display: none;
+           //display: none;
        }
 
        .#{$this}-text {
-            justify-content: space-evenly;
+            //justify-content: space-evenly;
 
            &-title {
-               flex: none;
-               text-align: center;
+               //flex: none;
+               //text-align: center;
+               padding-top: 3%;
            }
        }
    }
