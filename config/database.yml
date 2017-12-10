@@ -8,7 +8,7 @@ development:
   host: localhost
   # FIX THIS? username for DB may not be the same as log name
   username: <%=ENV['LOGNAME']%>
-  database: app-dev
+  database: panashe
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".

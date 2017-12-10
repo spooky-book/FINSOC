@@ -1,20 +1,37 @@
 .PageAboutUs {
-	background-color: whitesmoke !important;
+	//background-color: whitesmoke !important;
+    background-image: url("aboutBanner.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
 	color: black;
+    height:auto;
 
 	a {
 		width: 240px;
 	}
+    
+    /*.aboutHeader {
+        background-image: url("aboutBanner.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size:100% auto;
+    }*/
 
 	.dot-points {
 		margin-left: 50px;
 	}
+    
 
 	.name {
 		text-transform: uppercase;
 		font-weight: bold;
 		font-size: 1.2em;
 	}
+    
+    strong {
+        color: black;
+    }
 
 	.portrait {
 		width: 200px;
@@ -30,6 +47,10 @@
 	.hover-image:hover .hover-text {
 		display: block;
 	}
+    
+    .in {
+        padding-left: 2px;
+    }
 
 	.hover-text {
 		position: absolute;
@@ -51,10 +72,14 @@
 	}
 
 	.ppl-row {
-		padding-left: 20px;
-		padding-right: 20px;
+		padding-left: 5%;
+		padding-right: 5%;
 		padding-bottom: 70px;
 	}
+    
+    .og-details a {
+        border: none !important;
+    }
 
 	.FinsocHighlight {
         color: $darkBlue1;
@@ -71,7 +96,7 @@
 		}
 
 		hr {
-			background-image: linear-gradient(to right, rgba(131, 186, 247, 0), rgba(131, 186, 247, 0.75), rgba(131, 186, 247, 0));
+			background-image: linear-gradient(to right, rgba(131, 186, 247, 0), 8, rgba(131, 186, 247, 0));
 			height: 1px;
 			width: 80%;
 			margin-left: 10%;
