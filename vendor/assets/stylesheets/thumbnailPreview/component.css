@@ -38,7 +38,7 @@
 	width: 0;
 	position: absolute;
 	pointer-events: none;
-	border-bottom-color: #ddd;
+	border-bottom-color: #e6e6e6;
 	border-width: 15px;
 	left: 50%;
 	margin: 0px 0 0 -15px;
@@ -46,7 +46,7 @@
 
 .og-expander {
 	position: absolute;
-	background: #ddd;
+	background: #e6e6e6;
 	top: auto;
 	left: 0;
 	width: 100%;
@@ -104,7 +104,7 @@
 
 .og-details {
 	padding: 0px 20px;
-	height: 400px;
+	height: 620px;
 	overflow: auto;
 }
 
@@ -136,24 +136,25 @@
 .og-details a {
 	font-weight: 700;
 	font-size: 16px;
-	color: #333;
-	text-transform: uppercase;
+	color: rgb(68,109,136);
+	/*text-transform: uppercase;*/
 	letter-spacing: 2px;
-	padding: 10px 20px;
-	border: 3px solid #333;
+	padding-top: 8px;
 	display: inline-block;
-	margin: 30px 0 0;
+	/*margin: 30px 0 0;*/
 	outline: none;
 }
 
-.og-details a::before {
+/*.og-details a::before {
 	content: '\2192';
 	display: inline-block;
 	margin-right: 10px;
-}
+}*/
 
 .og-details a:hover {
-	border-color: #999;
+	/*border-color: #999;*/
+    text-decoration: none;
+
 	color: #999;
 }
 
