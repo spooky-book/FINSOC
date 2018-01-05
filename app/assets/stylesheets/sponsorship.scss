@@ -1,7 +1,17 @@
 @import "variables";
 
+.pageSponsors {
+    background-image: image-url("sponsorBanner.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+	color: black;
+    height:auto;
+}
+
 .sponsors-container {
 	padding-bottom: 40px;
+
 
     .sponsor {
         margin-bottom: $space-md;

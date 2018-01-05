@@ -1,30 +1,51 @@
-<div class="row">
-	<div class="col-md-3 logoFooter">
-		<%= link_to image_tag("logoWhite.png", id: "footer-logo"), root_path, method: :get %>
-	</div>
+<div class="container footerCentre">
+
 	<div class="col-md-2 site-map">
-		<h4>ABOUT US</h4>
+		<h5>ABOUT US</h5>
 		<%= link_to "Our Team", about_us_path(anchor: "team"), method: :get %>
 		<%= link_to "Our Values", about_us_path(anchor: "values"), method: :get %>
+        <%= link_to "Contact Us", contact_us_path(anchor: ""), method: :get %>
 	</div>
 	<div class="col-md-2 site-map">
-		<h4>SPONSORS</h4>
+		<h5>SPONSORS</h5>
 		<%= link_to "Our Sponsors", sponsorship_path(anchor: "sponsors"), method: :get %>
 		<%= link_to "Apply", sponsorship_path(anchor: "apply"), method: :get %>
+        
 	</div>
 	<div class="col-md-2 site-map">
-		<h4>EVENTS</h4>
+		<h5>EVENTS</h5>
 		<%= link_to "Latest events", events_path(anchor: "upcoming"), method: :get %>
 	</div>
-	<div class="col-md-3" id="contacts">
-		<p>
+    <div class="col-md-2 site-map">
+		<h5>PUBLICATIONS</h5>
+		<%= link_to "Newsletter", newsletter_path(anchor: ""), method: :get %>
+        <%= link_to "Course Guide", course_guide_path(anchor: ""), method: :get %>
+	</div>
+	<div class="col-md-3 social-media-box" id="contacts">
+        <p>
+            <a style="display:inline-block !important;" id="facebook-icon" href="https://www.facebook.com/FINSOCUNSW/" target="_blank">
+                <i class="fa fa-facebook-square"></i>
+            </a>
+            <a style="display:inline-block !important;" id="linkedin-icon" href="https://au.linkedin.com/company/unsw-finance-and-banking-society" target="_blank">
+                <i class="fa fa-linkedin-square"></i>
+            </a> 
+		</p>
+        <p>
 			<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
 			Kensington, New South Wales
 		</p>
 		<p>
 			<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-			enquiries@unswfinsoc.org.au
-		</p>
+            <a style="" href='mailto:enquiries@unswfinsoc.org.au'>enquiries@unswfinsoc.org.au</a>
+        </p>
+        
+       
 	</div>
+     
 </div>
-<p>&copy 2016-2017 UNSW FINSOC </p>
+
+<div class="container">
+    <div class="col-md-3">
+        <p>&copy 2016-2018 UNSW FINSOC </p>
+    </div>
+</div>

@@ -5,7 +5,7 @@ html {
 	height: 100%;
 }
 
-.aboutHeader {
+.aboutHeader, .sponsorHeader {
     min-height: 30em;
     
 }
@@ -33,9 +33,46 @@ body {
     padding: 10px;
     padding-left: 20px;
 }
+
 .section {
     background-color: white !important;
     
+}
+
+.social-media-box {
+		.fa {
+            
+			font-size: 3em;
+			margin: 0px 20px 0px 0px;
+		}
+
+		.fa-facebook-square {
+			color: #3b5998;
+
+			&:hover {
+				color: #4b69a8;
+			}
+		}
+
+		.fa-twitter {
+			color: #00aced;
+
+			&:hover {
+				color: #00ccfd;
+			}
+		}
+
+		.fa-linkedin-square {
+			color: #007bb5;
+
+			&:hover {
+				color: #009bd5;
+			}
+		}
+	}
+
+.glyphicon-map-marker, .glyphicon-envelope {
+    color: white !important;
 }
 
 .section-text {
@@ -162,26 +199,34 @@ button:hover {
 	left: 0;
 	width: 100%;
 	background-color: #383d44;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 20px;
+	padding-bottom: 30px;
 	border-top: 20px solid #383d44;
 }
 
 #footer a {
 	display: block;
 	color: white;
+    font-size: 0.8em;
 	padding: 5px 0px;
+    text-decoration: none;
+}
+
+#footer a:hover {
+	color: grey;
 }
 
 #footer p {
 	color: #BBBBBB;
-	font-size: 0.9em;
+	font-size: 0.8em;
 }
 
 .site-map {
 	display: block;
 	color: #888888;
 	padding-bottom: 20px;
+    margin-right: 20px;
+    min-height: 160px;
 }
 
 #footer-logo {
@@ -190,7 +235,18 @@ button:hover {
 }
 
 #contacts {
-    margin-top: 13px;
+    margin-top: 0px;
+    
+    a {
+        display:inline-block; 
+        color: #BBBBBB; 
+        font-size:1em !important;
+        
+        &:hover {
+				color: gray;
+			}
+    }
+    
 }
 
 #contacts > * {
