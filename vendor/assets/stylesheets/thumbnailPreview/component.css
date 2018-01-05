@@ -102,10 +102,19 @@
 	position: relative;
 }
 
+.og-details::-webkit-scrollbar {
+    width: 6px;
+    background-color: #e6e6e6;
+} 
+ 
+.og-details::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
 .og-details {
 	padding: 0px 20px;
-	height: 620px;
-	overflow: auto;
+    overflow-y: scroll;
 }
 
 .og-fullimg {
@@ -143,6 +152,7 @@
 	display: inline-block;
 	/*margin: 30px 0 0;*/
 	outline: none;
+    
 }
 
 /*.og-details a::before {

@@ -1,17 +1,19 @@
-<div id="<%= id %>" class="SponsorTile <% if detail == "" %>SponsorTile--noDetail<% end %>">
-  <div class="SponsorTile-imgContainer">
-    <%= image_tag "sponsors/"+image_file %>
-  </div>
-  <div class="SponsorTile-text">
-    <div class="SponsorTile-text-title"><h1 class="display-4"><%= name %></h1></div>
-    <div class="SponsorTile-text-content" data-content>
-      <%= detail %>
+<a class="cardLink" target="_blank" href="<%= site_url %>">
+    <div id="<%= id %>" class="SponsorTile <% if detail == "" %>SponsorTile--noDetail<% end %>">
+      <div class="SponsorTile-imgContainer">
+        <%= image_tag "sponsors/"+image_file %>
+      </div>
+      <div class="SponsorTile-text">
+        <div class="SponsorTile-text-title"><h1 class="display-4"><%= name %></h1></div>
+        <div class="SponsorTile-text-content" data-content>
+          <%= detail %>
+        </div>
+        <div class="SponsorTile-text-footer">
+          <a class="SponsorTile-text-footer-link" href="<%= site_url %>">Visit Site</a>
+          <span class="SponsorTile-text-footer-arrow glyphicon glyphicon-chevron-down"
+                aria-hidden="true" data-arrow="<%= id %>-arrow"></span>
+        </div>
+      </div>
     </div>
-    <div class="SponsorTile-text-footer">
-      <a class="SponsorTile-text-footer-link" href="<%= site_url %>">Visit Site</a>
-      <span class="SponsorTile-text-footer-arrow glyphicon glyphicon-chevron-down"
-            aria-hidden="true" data-arrow="<%= id %>-arrow"></span>
-    </div>
-  </div>
-</div>
+</a>
 
