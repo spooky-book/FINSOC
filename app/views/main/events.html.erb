@@ -7,7 +7,51 @@
   <div id="upcoming-events-section">
     <div class="subsection-title">Latest Events:</div>
     <!-- Events -->
-    <div class="event first-event">
+      <div class="event first-event">
+      <div class="event-inner">
+        <div class="event-img">
+         <%= image_tag "events/2018/oweek.jpg", alt: "Event: Volunteer with Finsoc for O-Week 2018!" %>
+        </div>
+        <div class="event-content">
+          <h2 class="event-content-title">
+            Volunteer with FINSOC for O-Week 2018!
+          </h2>
+          <div class="row">
+              <div class="event-content-date col-md-4">
+                  <%= image_tag "icons/calendar.svg", :class => "svg" %>
+                  <p>4 February 2018</p>
+              </div>
+              <div class="event-content-time col-md-4">
+                  <%= image_tag "icons/clock.svg", :class => "svg" %>
+                  <p>12:00AM</p>
+              </div>
+              <div class="event-content-location col-md-4">
+                  <%= image_tag "icons/location.svg", :class => "svg" %>
+                  <p>NONE</p>
+              </div>
+           </div>
+           <div class="event-content-details">
+             <p>
+
+
+The Finance and Banking Society (FINSOC) is currently recruiting volunteers to promote and brand FINSOC during Orientation Week at UNSW. 
+
+As a member of the FINSOC Promotion Team you will be able to learn and network with the 2018 Executive and Director team, while improving your interpersonal and teamwork skills through engaging and interacting with a variety of students through the week. 
+
+Applications will close on Sunday 4th February and will be processed on a rolling basis. 
+
+Successful applicants will be required to attend the FINSOC O-Week Volunteer Training Day (held on Saturday 17th February), and at least one day during O-Week (19th - 23th February).
+                 <br/><br/>
+<p>
+Apply <%= link_to "HERE", "https://goo.gl/forms/qzVJAlZwKTSQXSxj1", class: "link", :target => "_blank" %>  and check out our facebook <%= link_to "event", "https://www.facebook.com/events/1947954118799249/", class: "link", :target => "_blank" %>.
+               </p>
+             </p>
+        
+          </div>
+        </div>
+      </div>
+    </div> 
+    <div class="event past-event">
       <div class="event-inner">
         <div class="event-img">
          <%= image_tag "events/2017/aimainvestments.jpg", alt: "Event: Intro to Alternative Investments" %>
