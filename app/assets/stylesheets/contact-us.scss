@@ -1,17 +1,58 @@
 @import "variables";
 
+.pageContactUs {
+    background-image: image-url("contactBanner.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+	color: black;
+    height:auto;
+}
+
+.bioLink {
+    font-weight: 900 !important;
+}
+
+.title3 {
+
+    width:auto;
+    color:  rgb(68,109,136);
+    padding-bottom: 5px;
+	padding: 20px 0px;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.title3 h1 {
+	font-size: 2em;
+	letter-spacing: 5px;
+
+    @media (min-width: $screenMobile) {
+        font-size: 4em;
+    }
+}
+
+
 .contact-us-container {
 
 	padding-bottom: 30px;
 	background-color: whitesmoke !important;
 	color: #555555;
 
-	#contact-us-content {
-		background-color: white;
-		text-align: center;
+	.contact-us-content {
+		background-color: white !important;
+		text-align: center !important;
         box-shadow: $zdepth1;
 		border-radius: 0px;
 		box-shadow: $zdepth1;
+        height: 500px !important;
+        
+        a {
+            color: black;
+        }
+        
+        a:hover {
+            color: #3b5998;
+        }
 	}
 
 	.contact-us-box {
@@ -27,7 +68,7 @@
 
 		.fa {
 			font-size: 3em;
-			margin: 0 5px;
+			margin: 0 15px;
 		}
 
 		.fa-facebook {
@@ -65,6 +106,6 @@
 	}
 
 	.finsoc-email {
-		font-weight: bold;
+		font-weight: 900 !important;
 	}
 }
