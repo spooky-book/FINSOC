@@ -83,7 +83,7 @@ body {
 .section-text {
     padding-bottom: 95px;
     padding-top: 45px;
-    padding-left: 80px;
+    //padding-left: 80px;
    // margin-left: 15%;
     //margin-right: 15%;
     //width: auto !important;
@@ -103,6 +103,10 @@ body {
     width: auto;
     text-align: center;
 	//color: $darkBlue;
+}
+
+.h2Custom {
+    font-size: 40px !important;
 }
 
 .title1 {
