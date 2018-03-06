@@ -45,6 +45,17 @@
 
             </div>
         </div>
+        <div class="Event">
+            <%= link_to events_path, method: :get do %>
+
+            <div class="Event-imgContainer">
+                    <%= image_tag "events/2018/meet.jpg", :class=> "Event-imgContainer-img", alt: "O-Week" %>
+            </div>
+            <% end %>
+            <div class="Event-title">
+            Meet and Greet
+            </div>
+        </div>
         <div class="Event Event-past">
             <%= link_to events_path, method: :get do %>
 
@@ -54,18 +65,6 @@
             <% end %>
             <div class="Event-title">
             O-Week 
-            </div>
-        </div>
-        <div class="Event Event-past">
-            <%= link_to events_path, method: :get do %>
-            <div class="Event-imgContainer">
-                    <div class="Event-imgContainer-link">
-                        <%= image_tag "events/2017/reverseinterview.png", :class=> "Event-imgContainer-img Event-imgContainer-img--showRight", alt: "Reverse Interview" %>
-                    </div>
-            </div>
-            <% end %>
-            <div class="Event-title">
-            Reverse Interview
             </div>
         </div>
     </div>
