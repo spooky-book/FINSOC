@@ -13,9 +13,9 @@
           </div>
           <% if  show_new_page %>
             
-              <a href="https://www.facebook.com/events/197098474211959/" target="_blank"><div class="event-box">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeKHEb1Ah3dmet1YujrW6woqu164Y44sUk57kTRFfPMk3RR_Q/viewform" target="_blank"><div class="event-box">
                   <!--<b>UPCOMING EVENTS</b>-->
-                  <b>CLICK HERE FOR SUBCOMMITTEE APPLICATIONS! </b>
+                  <b>2018 SIGN UP FORM </b>
                   </div></a>
           <% end %>
          <%= image_tag "events/default-min-2.jpg", id:"finsoc-banner-logo", alt: "UNSW FINSOC" %>
@@ -35,6 +35,17 @@
             <%= link_to events_path, method: :get do %>
 
             <div class="Event-imgContainer">
+                    <%= image_tag "events/2018/akuna.jpg", :class=> "Event-imgContainer-img", alt: "Gateway To Trading" %>
+            </div>
+            <% end %>
+            <div class="Event-title">
+            Gateway to Trading
+            </div>
+        </div>
+        <div class="Event Event-past">
+            <%= link_to events_path, method: :get do %>
+
+            <div class="Event-imgContainer">
                   <div class="Event-imgContainer-link">
                       <%= image_tag "events/2018/hsbc.jpg", :class=> "Event-imgContainer-img Event-imgContainer-img--showRight", alt: "Starting a Career in Banking" %>
                   </div>
@@ -45,7 +56,7 @@
 
             </div>
         </div>
-        <div class="Event">
+        <div class="Event Event-past">
             <%= link_to events_path, method: :get do %>
 
             <div class="Event-imgContainer">
@@ -56,17 +67,7 @@
             Meet and Greet
             </div>
         </div>
-        <div class="Event Event-past">
-            <%= link_to events_path, method: :get do %>
-
-            <div class="Event-imgContainer">
-                    <%= image_tag "events/2018/oweek.jpg", :class=> "Event-imgContainer-img", alt: "O-Week" %>
-            </div>
-            <% end %>
-            <div class="Event-title">
-            O-Week 
-            </div>
-        </div>
+        
     </div>
 
     <div class="container">

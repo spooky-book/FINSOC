@@ -10,6 +10,43 @@
       <div class="event first-event">
       <div class="event-inner">
         <div class="event-img">
+         <%= image_tag "events/2018/akuna.jpg", alt: "Event: Gateway to Trading" %>
+        </div>
+        <div class="event-content">
+          <h2 class="event-content-title">
+            Gateway to Trading
+          </h2>
+          <div class="row">
+              <div class="event-content-date col-md-4">
+                  <%= image_tag "icons/calendar.svg", :class => "svg" %>
+                  <p>22 MARCH 2018</p>
+              </div>
+              <div class="event-content-time col-md-4">
+                  <%= image_tag "icons/clock.svg", :class => "svg" %>
+                  <p>6:00PM</p>
+              </div>
+              <div class="event-content-location col-md-4">
+                  <%= image_tag "icons/location.svg", :class => "svg" %>
+                  <p>TBC</p>
+              </div>
+           </div>
+           <div class="event-content-details">
+             <p>
+UNSW FINSOC have partnered up with Akuna Capital to present to you an exclusive opportunity to network and gain insights on their day-to-day business. Based in Chicago, Akuna Capital has a multinational presence and are on the hunt for top students to join their recently launched Sydney office!
+
+Representatives will be on campus running a Q&A session providing you with professional insights and top tips on entering a career in trading as well as a simulation game.                        
+                    
+Find out more <%= link_to "HERE", "https://www.facebook.com/events/438545413268206/", class: "link", :target => "_blank" %> 
+              
+             </p>
+        
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="event past-event">
+      <div class="event-inner">
+        <div class="event-img">
          <%= image_tag "events/2018/meet.jpg", alt: "Event: Meet and Greet" %>
         </div>
         <div class="event-content">
@@ -45,7 +82,7 @@ Find out more <%= link_to "HERE", "https://www.facebook.com/events/1798312260199
         </div>
       </div>
     </div> 
-      <div class="event first-event">
+      <div class="event past-event">
       <div class="event-inner">
         <div class="event-img">
          <%= image_tag "events/2018/hsbc.jpg", alt: "Event: Starting a Career in Banking" %>
