@@ -31,7 +31,18 @@
              <span class="glyphicon glyphicon-info-sign PageIndex-courseGuideFeature-icon" aria-hidden="true"></span> 
             </div>
         <% end %>
-        <div class="Event">
+        <div class="Event Event-past">
+            <%= link_to events_path, method: :get do %>
+
+            <div class="Event-imgContainer">
+                    <%= image_tag "events/2018/intern.jpg", :class=> "Event-imgContainer-img", alt: "O-Week" %>
+            </div>
+            <% end %>
+            <div class="Event-title">
+            Intern Panel
+            </div>
+        </div>
+        <div class="Event Event-past">
             <%= link_to events_path, method: :get do %>
 
             <div class="Event-imgContainer">
@@ -56,17 +67,7 @@
 
             </div>
         </div>
-        <div class="Event Event-past">
-            <%= link_to events_path, method: :get do %>
-
-            <div class="Event-imgContainer">
-                    <%= image_tag "events/2018/meet.jpg", :class=> "Event-imgContainer-img", alt: "O-Week" %>
-            </div>
-            <% end %>
-            <div class="Event-title">
-            Meet and Greet
-            </div>
-        </div>
+        
         
     </div>
 

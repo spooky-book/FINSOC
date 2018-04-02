@@ -7,7 +7,42 @@
   <div id="upcoming-events-section">
     <div class="subsection-title">Latest Events:</div>
     <!-- Events -->
-      <div class="event first-event">
+      <div class="event past-event">
+      <div class="event-inner">
+        <div class="event-img">
+         <%= image_tag "events/2018/intern.jpg", alt: "Event: Big 4 Intern Panel" %>
+        </div>
+        <div class="event-content">
+          <h2 class="event-content-title">
+            Gateway to Trading
+          </h2>
+          <div class="row">
+              <div class="event-content-date col-md-4">
+                  <%= image_tag "icons/calendar.svg", :class => "svg" %>
+                  <p>26 MARCH 2018</p>
+              </div>
+              <div class="event-content-time col-md-4">
+                  <%= image_tag "icons/clock.svg", :class => "svg" %>
+                  <p>6:00PM</p>
+              </div>
+              <div class="event-content-location col-md-4">
+                  <%= image_tag "icons/location.svg", :class => "svg" %>
+                  <p>Law G04</p>
+              </div>
+           </div>
+           <div class="event-content-details">
+             <p>
+Join UNSW FINSOC for our Big 4 Internship Insight Panel and learn from a panel of previous interns from the Big 4 professional services firms (PwC, EY, KPMG and Deloitte). Over the summer, the panelists worked in a range of different divisions including Deals, Consulting, Assurance, Tax and Transactions Advisory. Come along and hear about their personal experiences, what it is like working at each respective firm and gain tips to optimise your application process.                   
+                    
+Find out more <%= link_to "HERE", "https://www.facebook.com/events/190698468210950/", class: "link", :target => "_blank" %> 
+              
+             </p>
+        
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="event past-event">
       <div class="event-inner">
         <div class="event-img">
          <%= image_tag "events/2018/akuna.jpg", alt: "Event: Gateway to Trading" %>
