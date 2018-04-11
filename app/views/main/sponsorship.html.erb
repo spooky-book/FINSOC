@@ -12,15 +12,26 @@
     <div class="section">
     <div class="sponsors-container container">
         <br/> 
-    <br/>
+    <div class="subheading">
+          <h2 class="h2Custom">Platinum Sponsor</h2>
+            <br/>
+            <hr/>
+        </div>
     <br/>
       <%= render partial: "main/sponsors/template", locals: {
-        id: "ey",
-        name: "EY",
-        image_file: "ey2.jpg",
+        id: "hsbc",
+        name: "HSBC",
+        image_file: "hsbc3.png",
         detail: "",
-        site_url: "http://www.ey.com.au"
+        site_url: "https://www.hsbc.com.au"
       }%>
+        <br/>
+        <br/>
+        <div class="subheading">
+          <h2 class="h2Custom">Official Sponsors</h2>
+            <br/>
+            <hr/>
+        </div>
       <%= render partial: "main/sponsors/template", locals: {
         id: "cfa",
         name: "CFA Institute",
@@ -30,43 +41,11 @@
       }%>
       
       <%= render partial: "main/sponsors/template", locals: {
-        id: "hsbc",
-        name: "HSBC",
-        image_file: "hsbc3.png",
+        id: "jpmorgan",
+        name: "J.P.Morgan",
+        image_file: "jpmorgan1.png",
         detail: "",
-        site_url: "https://www.hsbc.com.au"
-      }%>
-      <%= render partial: "main/sponsors/template", locals: {
-        id: "luminispartners",
-        name: "Luminis Partners",
-        image_file: "luminis.jpg",
-        detail: "",
-        site_url: "http://www.luminispartners.com/"
-      }%>
-      
-      <%= render partial: "main/sponsors/template", locals: {
-        id: "nomura",
-        name: "Nomura",
-        image_file: "nomura.png",
-        detail: "",
-        site_url: "http://www.nomura.com/"
-      }%>
-      
-
-      <% if  show_new_page%>
-      <%= render partial: "main/sponsors/template", locals: {
-        id: "aima",
-        name: "Alternative Investment Management Association ",
-        image_file: "aima.jpg",
-        detail: "",
-        site_url: "https://www.aima.org"
-      }%> 
-      <%= render partial: "main/sponsors/template", locals: {
-        id: "gresham",
-        name: "Gresham",
-        image_file: "gresham.jpg",
-        detail: "",
-        site_url: "https://www.gresham.com.au/"
+        site_url: "http://jpmorgan.com/careers"
       }%>
       <%= render partial: "main/sponsors/template", locals: {
         id: "challenger",
@@ -76,29 +55,76 @@
         site_url: "http://www.challenger.com.au/"
       }%>
       <%= render partial: "main/sponsors/template", locals: {
-        id: "gradmentor",
-        name: "GradMentor",
-        image_file: "gradmentor.jpg",
+        id: "wilsons",
+        name: "Wilsons Advisory",
+        image_file: "wilsons1.png",
         detail: "",
-        site_url: "http://www.gradmentor.com.au"
+        site_url: "https://www.wilsonsadvisory.com.au/"
       }%>
-      <%= render partial: "main/sponsors/template", locals: {
-        id: "fpa",
-        name: "Financial Planning Association of Australia",
-        image_file: "fpa.jpg",
-        detail: "",
-        site_url: "http://www.fpa.com.au"
-      }%>
-      <%= render partial: "main/sponsors/template", locals: {
+        <div class="subheading">
+          <h2 class="h2Custom">Supporters</h2>
+            <br/>
+            <hr/>
+        </div>
+        <%= render partial: "main/sponsors/template", locals: {
          id: "zookal",
         name: "Zookal",
         image_file: "logozookal.png",
         detail: "",
         site_url: "http://www.zookal.com.au"
       }%>
+        <%= render partial: "main/sponsors/template", locals: {
+        id: "gradmentor",
+        name: "GradMentor",
+        image_file: "gradmentor.jpg",
+        detail: "",
+        site_url: "http://www.gradmentor.com.au"
+      }%>
+        <%= render partial: "main/sponsors/template", locals: {
+        id: "gresham",
+        name: "Gresham",
+        image_file: "gresham.jpg",
+        detail: "",
+        site_url: "https://www.gresham.com.au/"
+      }%>
+        
+        <%= render partial: "main/sponsors/template", locals: {
+        id: "nomura",
+        name: "Nomura",
+        image_file: "nomura.png",
+        detail: "",
+        site_url: "http://www.nomura.com/"
+      }%>
+        <%= render partial: "main/sponsors/template", locals: {
+        id: "aima",
+        name: "Alternative Investment Management Association ",
+        image_file: "aima.jpg",
+        detail: "",
+        site_url: "https://www.aima.org"
+      }%> 
+      <%= render partial: "main/sponsors/template", locals: {
+        id: "luminispartners",
+        name: "Luminis Partners",
+        image_file: "luminis.jpg",
+        detail: "",
+        site_url: "http://www.luminispartners.com/"
+      }%>
+      
+      
+      <% if  show_new_page%>
+      
+      
+      
+        <%= render partial: "main/sponsors/template", locals: {
+        id: "ey",
+        name: "EY",
+        image_file: "ey2.jpg",
+        detail: "",
+        site_url: "http://www.ey.com.au"
+      }%>
       <% end %>
         </div>
-      
+      <br/>
     </div>
     <div class="section2 applyContainer">
     <a name="apply"></a>
