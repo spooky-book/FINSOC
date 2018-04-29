@@ -1,26 +1,83 @@
+
 <div class="PageIndex">
+
+    
+
     <div id="finsoc-banner">
-      <div class="carousel-inner" role="listbox">
-       <div class="item active carousel-img PageIndex-carousel-img">
-          <div class="PageIndex-carousel-text">
-            <h1>
-              Finance & Banking Society
-            </h1>
-            <h2>
-              University of New South Wales<br/>
-              FINSOC
-            </h2>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+          <div class="carousel-inner" role="listbox">
+           <div class="item active carousel-img PageIndex-carousel-img">
+              <div class="PageIndex-carousel-text">
+                <h1>
+                  Finance & Banking Society
+                </h1>
+                <h2>
+                  University of New South Wales<br/>
+                  FINSOC
+                </h2>
+              </div>
+              <% if  show_new_page %>
+
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSeKHEb1Ah3dmet1YujrW6woqu164Y44sUk57kTRFfPMk3RR_Q/viewform" target="_blank"><div class="event-box">
+                      <!--<b>UPCOMING EVENTS</b>-->
+                      <b class="darkButton">2018 SIGN UP &rarr; </b>
+                      </div></a>
+              <% end %>
+             <%= image_tag "events/default-min-2.jpg", id:"finsoc-banner-logo", alt: "UNSW FINSOC" %>
+           </div>
+              <div class="item carousel-img PageIndex-carousel-img">
+              <div class="PageIndex-carousel-text">
+                <h1>
+                  Read our latest blog!
+                </h1>
+                <h2>
+                  A Quantamental analysis primer<br/>
+                  
+                </h2>
+              </div>
+              <% if  show_new_page %>
+
+                  <a href="http://localhost:3000/blog" target="_blank"><div class="event-box">
+                      <!--<b>UPCOMING EVENTS</b>-->
+                      <b>View Here </b>
+                      </div></a>
+              <% end %>
+             <%= image_tag "forest.jpg", id:"finsoc-banner-logo", alt: "UNSW FINSOC" %>
+           </div>
+              <div class="item carousel-img PageIndex-carousel-img">
+              <div class="PageIndex-carousel-text">
+                <h1>
+                  Get involved with FINSOC!
+                </h1>
+                <h2>
+                  Join our <a href="http://eepurl.com/bQ0Pmv" target="_blank"><b>Mailing List </b></a> and follow us on <a href="https://www.facebook.com/FINSOCUNSW/" target="_blank"><b>Facebook </b></a><br/>
+                  
+                </h2>
+              </div>
+              <% if  show_new_page %>
+
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSeKHEb1Ah3dmet1YujrW6woqu164Y44sUk57kTRFfPMk3RR_Q/viewform" target="_blank"><div class="event-box">
+                      <!--<b>UPCOMING EVENTS</b>-->
+                      <b>Sign up for FINSOC &rarr; </b>
+                      </div></a>
+              <% end %>
+             <%= image_tag "team.png", id:"finsoc-banner-logo", alt: "UNSW FINSOC" %>
+           </div>
           </div>
-          <% if  show_new_page %>
-            
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeKHEb1Ah3dmet1YujrW6woqu164Y44sUk57kTRFfPMk3RR_Q/viewform" target="_blank"><div class="event-box">
-                  <!--<b>UPCOMING EVENTS</b>-->
-                  <b>2018 SIGN UP FORM </b>
-                  </div></a>
-          <% end %>
-         <%= image_tag "events/default-min-2.jpg", id:"finsoc-banner-logo", alt: "UNSW FINSOC" %>
-       </div>
-      </div>
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+        </div>
     </div>
 
     <div class="PageIndex-featured container">
@@ -70,8 +127,8 @@
         
         
     </div>
-
-    <div class="container">
+    <div class="section2">
+      <div class="section-text container" style="padding-bottom:0px;">
         <div class="Card PageIndex-missionCard">
             <div class="title">
                 <h2>Our Mission</h2>
@@ -80,11 +137,23 @@
                 <p>To become Australia&#8217;s leading student run society platform in assisting students on achieving their banking and financial planning career goals.</p>
             </div>
         </div>
-
-        <div class="Card">
+      </div>
+    </div>
+    <div class="section2 filler">
+      <div class="container">
+    
+      </div>
+    </div>
+     <div class="section">
+      <div class="section-text container">
+        <div class="">
           <div class="Card-text">
+              <br/>
+              <br/>
             <div class="title">
-              <h2>Sponsors</h2>
+              <h2>Our Sponsors</h2>
+                <br/>
+                <br/>
             </div>
             <% if !show_new_page %>
             <div class="SponsorsList"> 
@@ -108,7 +177,7 @@
                   <%= image_tag "sponsors/cfa.jpg", alt: "CFA Institute" %>
               </div>
               <div class="SponsorsList-item SponsorsList-hsbc">
-                  <%= image_tag "sponsors/jpmorgan1.png", alt: "EY" %>
+                  <%= image_tag "sponsors/jpmorgan1.png", alt: "JP Morgan" %>
               </div>
               
             </div>
@@ -116,7 +185,7 @@
               <div class="SponsorsList-item">
                   <%= image_tag "sponsors/challenger-logo.png", alt: "Challenger" %>
               </div>
-              <div class="SponsorsList-item SponsorsList-gresham">
+              <div class="SponsorsList-item SponsorsList-wilsons">
                   <%= image_tag "sponsors/wilsons1.png", alt: "Gresham" %>
               </div>
               <div class="SponsorsList-item">
@@ -128,36 +197,44 @@
               <div class="SponsorsList-item">
                   <%= image_tag "sponsors/gradmentor.jpg", alt: "GradMentor" %>
               </div>
-              <div class="SponsorsList-item SponsorsList-nomura">
+              <div class="SponsorsList-item SponsorsList-gresham">
                   <%= image_tag "sponsors/gresham.png", alt: "Nomura" %>
               </div>
-                <div class="SponsorsList-item">
+                <div class="SponsorsList-item SponsorsList-zookal">
                   <%= image_tag "sponsors/logozookal.png", alt: "Zookal" %>
               </div>
-              <div class="SponsorsList-item">
-                  <%= image_tag "sponsors/aima.jpg", alt: "Zookal" %>
+              <div class="SponsorsList-item SponsorsList-aima">
+                  <%= image_tag "sponsors/aima.jpg", alt: "Aima" %>
               </div>
             </div>
             <div class="SponsorsList">
                 <div class="SponsorsList-item">
-                  <%= image_tag "sponsors/nomura.png", alt: "Zookal" %>
+                  <%= image_tag "sponsors/nomura.png", alt: "Nomura" %>
               </div>
               <div class="SponsorsList-item SponsorsList-luminis">
                   <%= image_tag "sponsors/luminis.jpg", alt: "Luminis Partners" %>
               </div>
-              <div class="SponsorsList-item">
-                  <%= image_tag "sponsors/ey.png", alt: "Challenger" %>
+              <div class="SponsorsList-item SponsorsList-aima">
+                  <%= image_tag "sponsors/ey.png", alt: "EY" %>
               </div>
             </div>
           <% end %>
           </div>
-          <div class="Card-footer Card-footer--center">
-            <%= link_to sponsorship_path, method: :get do %>
-                <button class="Link">
-                    More Details
-                </button>
-            <% end %>
-          </div>
+            <br/>
+            <hr/>
+            <br/>
+            <center>
+              <div class="Card-footer Card-footer--center">
+                <%= link_to sponsorship_path, method: :get do %>
+                    <button class="Link">
+                        More Details
+                    </button>
+                <% end %>
+              </div>
+            </center>
         </div>
-    </div>
+      </div>
+    </div>    
+
+
 </div>

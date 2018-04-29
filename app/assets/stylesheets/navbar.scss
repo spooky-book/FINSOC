@@ -9,6 +9,9 @@ body {
 		background-color: white;
 		border-color: white;
 		height: 65px;
+        @media (min-width: $screenTablet) {
+            background-color: rgba(255,255,255,0.95);
+        }
 	}
 
 	.navbar-header {
@@ -46,6 +49,10 @@ body {
 		background-color: white;
 		font-size: 14px;
 		padding-right: 15px;
+        
+        @media (min-width: $screenTablet) {
+            background-color: rgba(255,255,255,0.1);
+        }
 
 		.navbar-item-link {
 			font-weight: bold;
@@ -59,11 +66,13 @@ body {
         }
 
 		li.navbar-item:hover {
-			background-color: #32607A;
-            @include transitionDelay(background-color, 500ms, linear);
+            border-bottom: 7px solid #383d44; /* or whatever colour you'd prefer */
+            //background-color: #32607A;
+            //@include transitionDelay(border-bottom, 500ms, ease-in-out);
             
             .navbar-item-link {
-                color: white;
+                color: #383d44;
+                @include transitionDelay(color, 250ms, linear);
             }
 		}
 	}

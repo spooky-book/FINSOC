@@ -16,24 +16,45 @@
             text-align: center;
         }
     }
+    
+    .filler {
+        transform: skewY(-2.5deg);
+        transform-origin: 100%;
+        z-index: -1;
+        min-height: 90px;
+    }
+    .carousel-inner > .item > a > img {
+          max-width: 1000% !important; 
+    }
+    
+    .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+        max-width: 1000% !important; 
+    }
 
 	#finsoc-banner {
 		position: relative;
+        max-height: 650px !important;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
-		height: 300px;
         box-shadow: $zdepth1;
 
         @media (min-width: $screenTablet) {
-            height: 500px;
+            height: 50%;
         }
+        
+        
 
         &-logo {
             min-height: 100%;
             min-width: 100%;
+            max-height: 400px !important;
             object-fit: cover;       /* Scale the image so it covers whole area, thus will likely crop */
             object-position: center; /* Center the image within the element */
+            
+            @media (min-width: 1450px) {
+                max-height: 650px !important;
+            }
 	    }
 	}
 
@@ -78,8 +99,8 @@
 
 	.event-box {
 		position: absolute;
-		bottom: 0px;
         width: 100%;
+        bottom: 60px;
 		background-color: white;
 		padding: 10px;
         border: 2px;
@@ -92,7 +113,7 @@
         @media (min-width: $screenMobile) {
             left: 50%;
             width: 440px;
-            bottom: 20px;
+            bottom: 60px;
             margin-left: -220px;
         }
 
@@ -106,7 +127,8 @@
         &:hover {
             color: white;
             letter-spacing: 1px;
-            background-color: $lightBlue1;
+            background-color: rgb(112,168,187);
+            @include transitionDelay(color, 100ms, linear);
         }
 	}
 
