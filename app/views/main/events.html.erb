@@ -7,10 +7,45 @@
   <div id="upcoming-events-section">
     <div class="subsection-title">Latest Events:</div>
     <!-- Events -->
+
+      <div class="event">
+      <div class="event-inner">
+        <div class="event-img">
+         <%= image_tag "events/2018/resumeWorkshop.jpg", alt: "Event: Resume workshop" %>
+        </div>
+        <div class="event-content">
+          <h2 class="event-content-title">
+            Resume workshop
+          </h2>
+          <div class="row">
+              <div class="event-content-date col-md-4">
+                  <%= image_tag "icons/calendar.svg", :class => "svg" %>
+                  <p>10 MAY 2018</p>
+              </div>
+              <div class="event-content-time col-md-4">
+                  <%= image_tag "icons/clock.svg", :class => "svg" %>
+                  <p>12:00PM</p>
+              </div>
+              <div class="event-content-location col-md-4">
+                  <%= image_tag "icons/location.svg", :class => "svg" %>
+                  <p>Red Centre M032</p>
+              </div>
+           </div>
+           <div class="event-content-details">
+             <p>
+Come along to FINSOC and UNSW Career and Employment’s Banking Resume Workshop to kickstart your career in finance! 
+Find out more <%= link_to "HERE", "https://www.facebook.com/events/115513865978101/", class: "link", :target => "_blank" %>.                  
+    
+             </p>
+        
+          </div>
+        </div>
+      </div>
+    </div>
       <div class="event past-event">
       <div class="event-inner">
         <div class="event-img">
-         <%= image_tag "events/2018/family.jpg", alt: "Event: Family Fued" %>
+         <%= image_tag "events/2018/family.jpg", alt: "Event: Family Feud" %>
         </div>
         <div class="event-content">
           <h2 class="event-content-title">
