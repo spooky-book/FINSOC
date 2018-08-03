@@ -6,9 +6,11 @@
     }
 
 	.carousel-inner {
-		height: 100%;
+		height: auto;
         box-shadow: $zdepth1;
 	}
+    
+    height: auto;
 
 	.carousel-img {
 		width: 100%;
@@ -18,5 +20,40 @@
 
     .SponsorsList.#{$this}-sponsors {
         height: 100%;
+    }
+
+
+    .video_frame {
+        height: auto;
+        
+    }
+
+    .sponsor_header{
+        min-height: auto;
+    }
+
+    video { 
+
+        
+    }
+
+    .center {
+        margin-left: auto;
+        margin-right: auto;
+        display: block
+    }
+
+    .video-container {
+        overflow: hidden;
+        background-color: rgb(59,59,59);
+    }
+    .video-container video {
+      /* Make video to at least 100% wide and tall */
+      max-width: 100%; 
+      min-height: auto; 
+        
+
+      /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+      
     }
 }
