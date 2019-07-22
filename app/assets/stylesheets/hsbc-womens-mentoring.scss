@@ -1,6 +1,18 @@
 .PageHSBCMentor {
     $this: PageHSBCMentor;
-	/*.aboutHeader {
+	//background-color: whitesmoke !important;
+    background-image: image-url("wif.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+	color: black;
+    height:auto;
+
+	a {
+		
+	}
+    
+    /*.aboutHeader {
         background-image: url("wif.jpg");
         background-repeat: no-repeat;
         background-attachment: fixed;
