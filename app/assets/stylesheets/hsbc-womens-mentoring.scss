@@ -1,5 +1,11 @@
 .PageHSBCMentor {
     $this: PageHSBCMentor;
+	/*.aboutHeader {
+        background-image: url("wif.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size:100% auto;
+    }*/
 
     &-text {
         text-align: justify;
@@ -54,6 +60,7 @@
         
 
       /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+	  
       
     }
 }
