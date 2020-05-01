@@ -18,6 +18,8 @@ Rails.application.routes.draw do
   get 'publications' => 'main#blog'
   get 'blog' => 'main#blog'
 
+  get 'weeklywrap' => 'main#weeklywrap'
+
   get 'newsletter' => 'main#newsletter'
   get 'course-guide' => 'main#course_guide'
 
