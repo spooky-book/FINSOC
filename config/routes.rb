@@ -15,8 +15,10 @@ Rails.application.routes.draw do
   get 'hsbc-womens-mentoring' => 'main#hsbc_womens_mentoring'
 
   # Publications 
-  get 'publications' => 'main#publications'
+  get 'publications' => 'main#blog'
   get 'blog' => 'main#blog'
+
+  get 'weeklywrap' => 'main#weeklywrap'
 
   get 'newsletter' => 'main#newsletter'
   get 'course-guide' => 'main#course_guide'
