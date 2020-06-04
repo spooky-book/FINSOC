@@ -6,20 +6,22 @@ development:
   <<: *default
   database: finsoc_development
   host: localhost
-  # FIX THIS? username for DB may not be the same as log name
-  username: <%=ENV['LOGNAME']%>
-  database: panashe
+  port: 5432
+  username: dev_admin
+  password: yeetus
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 
 # HEROKU will override the database.yml file for production
-# test:
-#   <<: *default
-#   database: finsoc_test
-#   username: admin
-#   password:
+#test:
+#  <<: *default
+#  host: localhost
+#  port: 5432
+#  database: finsoc_test
+#  username: dev_admin
+#  password: yeetus
 
 # production:
 #   <<: *default
