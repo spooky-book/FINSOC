@@ -1,7 +1,7 @@
 .PageHSBCMentor {
     $this: PageHSBCMentor;
 	//background-color: whitesmoke !important;
-    background-image: image-url("wif.jpg");
+    background-image: image-url("wmp.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:cover;
@@ -13,7 +13,7 @@
 	}
     
     /*.aboutHeader {
-        background-image: url("wif.jpg");
+        background-image: url("wmp.jpg");
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size:100% auto;
@@ -28,7 +28,7 @@
         box-shadow: $zdepth1;
 	}
     
-    height: auto;
+    height: 100%;
 
 	.carousel-img {
 		width: 100%;
