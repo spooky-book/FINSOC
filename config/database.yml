@@ -6,7 +6,7 @@ development:
   <<: *default
   database: finsoc_development
   host: localhost
-  port: 5432
+  port: 
   username: dev_admin
   password: yeetus
 
@@ -18,7 +18,7 @@ development:
 test:
   <<: *default
   host: localhost
-  port: 5432
+  port: 
   database: finsoc_test
   username: dev_admin
   password: yeetus
