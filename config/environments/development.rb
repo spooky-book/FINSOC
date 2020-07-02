@@ -40,5 +40,5 @@ Rails.application.configure do
   # config.action_view.raise_on_missing_translations = true
   
   # Removes error of pending migrations
-  config.active_record.migration_error = false
+  config.active_record.migration_error = true
 end
