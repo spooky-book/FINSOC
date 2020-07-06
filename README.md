@@ -3,6 +3,7 @@ The install instructions are on the site: https://rvm.io/
 
 However if you are running Ubuntu (my version was 20.04) you can just run the GPG key command and follow the ubuntu   install instructions here: https://github.com/rvm/ubuntu_rvm
 =======
+
 # Follow instructions on downloading Ruby on Rails. 
 # https://www.howtoforge.com/tutorial/how-to-install-ruby-on-rails-on-ubuntu-1804-lts/ is the website I used for Ubuntu 18.04, but you can search up instructions for yourself.
 # Also do step 6, up until it asking for a login.
@@ -43,7 +44,6 @@ rails s
     The install instructions are on the site: https://rvm.io/
     
     However if you are running Ubuntu (my version was 20.04) you can just run the GPG key command and follow the ubuntu   install instructions here: https://github.com/rvm/ubuntu_rvm
->>>>>>> parent of bd3c294... Update README.md
     
     if you are on Windows using WSL 2 then you will need to either restart windows or terminate the virtual machine somehow
     

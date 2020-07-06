@@ -32,6 +32,9 @@ class MainController < ApplicationController
   def weeklywrap
   end
 
+  def weeklywrap
+  end
+
   #def new
   #  render "main/index", locals: { show_new_page: true }
   #end
