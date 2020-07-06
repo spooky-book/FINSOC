@@ -1,5 +1,6 @@
 # FINSOC
 
+
 # Follow instructions on downloading Ruby on Rails. 
 # https://www.howtoforge.com/tutorial/how-to-install-ruby-on-rails-on-ubuntu-1804-lts/ is the website I used for Ubuntu 18.04, but you can search up instructions for yourself.
 # Also do step 6, up until it asking for a login.
