@@ -29,6 +29,9 @@ class MainController < ApplicationController
   def hsbc_womens_mentoring
   end
 
+  def weeklywrap
+  end
+
   #def new
   #  render "main/index", locals: { show_new_page: true }
   #end
