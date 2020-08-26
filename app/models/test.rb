@@ -1,2 +1,2 @@
-class Test < ApplicationRecord
+class Test < ApplicationRecord::Base
 end
